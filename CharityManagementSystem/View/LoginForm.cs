@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CharityManagementSystem.Controller;
+using CharityManagementSystem.Model;
 
-namespace CharityManagementSystem
+namespace CharityManagementSystem.View
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
         }
