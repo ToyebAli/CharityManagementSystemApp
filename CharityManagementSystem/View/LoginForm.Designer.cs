@@ -35,7 +35,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.registerNow = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -104,16 +104,17 @@
             this.button2.Text = "Sign Up";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // registerNow
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button3.Location = new System.Drawing.Point(426, 415);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(136, 35);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Register Now";
-            this.button3.UseVisualStyleBackColor = true;
+            this.registerNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerNow.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.registerNow.Location = new System.Drawing.Point(426, 415);
+            this.registerNow.Name = "registerNow";
+            this.registerNow.Size = new System.Drawing.Size(136, 35);
+            this.registerNow.TabIndex = 7;
+            this.registerNow.Text = "Register Now";
+            this.registerNow.UseVisualStyleBackColor = true;
+            this.registerNow.Click += new System.EventHandler(this.button3_Click);
             // 
             // label3
             // 
@@ -132,7 +133,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(759, 503);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.registerNow);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
@@ -157,7 +158,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button registerNow;
         private System.Windows.Forms.Label label3;
     }
 }
