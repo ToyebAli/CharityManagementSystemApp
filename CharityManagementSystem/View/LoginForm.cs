@@ -38,5 +38,31 @@ namespace CharityManagementSystem.View
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string userId = textBox1.Text;
+            string password = textBox2.Text;
+
+            if(userId == "" || password == "")
+            {
+                MessageBox.Show("Please Enter Your Username and Password");
+            }
+
+            else
+            {
+                LoginController lgc = new LoginController();
+                Login login = lgc.SearchLogin(userId, password);
+
+                if (login != null && login.UserId.Equals(userId) && login.Password.Equals(password))
+                {
+                    MessageBox.Show("Welcome " + login.Name);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Username or Password ");
+                }
+            }
+        }
     }
 }
