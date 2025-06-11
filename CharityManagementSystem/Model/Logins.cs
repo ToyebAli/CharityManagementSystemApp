@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CharityManagementSystem.Model
 {
-    internal class Logins
+    public class Logins
     {
+
     }
 }
