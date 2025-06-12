@@ -64,5 +64,13 @@ namespace CharityManagementSystem.View
                 }
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ResigstrationForm resigstrationForm = new ResigstrationForm();
+            resigstrationForm.FormClosed += (s, args) => Application.Exit();
+            resigstrationForm.Show();
+            this.Hide();
+        }
     }
 }
