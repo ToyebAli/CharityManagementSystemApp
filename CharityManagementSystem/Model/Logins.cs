@@ -16,6 +16,21 @@ namespace CharityManagementSystem.Model
     {
         SqlDbDataAccess sda = new SqlDbDataAccess();
 
+        public void AddLogin(Login login)
+        {
+            SqlCommand cmd = sda.GetQuery("INSERT INTO [User] Values(@userId, @name, @email, @password, @phoneNumber, @role);");
+            cmd.Parameters.AddWithValue("@userId", login.UserId);
+            cmd.Parameters.AddWithValue("@name", login.Name);
+            cmd.Parameters.AddWithValue("@email", login.Email);
+            cmd.Parameters.AddWithValue("@Password", login.Password);
+            cmd.Parameters.AddWithValue("@phoneNumber", login.PhoneNumber);
+            cmd.Parameters.AddWithValue("@role", login.Role);
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection.Open();
+            cmd.ExecuteNonQuery();
+            cmd.Connection.Close();
+        }
+
         public List<Login> GetData(SqlCommand cmd)
         {
             cmd.Connection.Open();
@@ -33,7 +48,6 @@ namespace CharityManagementSystem.Model
                     login.Password = reader.GetString(3);
                     login.PhoneNumber = reader.GetString(4);
                     login.Role = reader.GetInt32(5);
-                    login.Status = reader.GetString(6);
 
                     logins.Add(login);
                 }

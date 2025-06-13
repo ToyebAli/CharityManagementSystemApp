@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CharityManagementSystem.Controller;
+using CharityManagementSystem.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace CharityManagementSystem.View
 {
@@ -39,7 +43,29 @@ namespace CharityManagementSystem.View
 
         private void btnRegistor_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string userId = Guid.NewGuid().ToString(); // Generate a unique user ID
+                string name = txtName.Text;
+                string email = txtEmail.Text;
+                string phoneNumber = txtPhone.Text;
+                string password = txtPassword.Text;
 
+                Login login = new Login(userId, name,email,password,phoneNumber,1);
+
+                LoginController lgc = new LoginController();
+                lgc.AddLogin(login);
+
+                MessageBox.Show("User Added");
+                this.Hide();
+                LoginForm loginForm = new LoginForm();
+                loginForm.ShowDialog();
+            }
+
+            catch (Exception x)
+            {
+                MessageBox.Show(x.StackTrace);
+            }
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)

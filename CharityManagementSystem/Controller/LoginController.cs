@@ -15,5 +15,11 @@ namespace CharityManagementSystem.Controller
             Login login = lgs.SearchLogin(userId, password);
             return login;
         }
+
+        public void AddLogin(Login login)
+        {
+            Logins lgs = new Logins();
+            lgs.AddLogin(login);
+        }
     }
 }
