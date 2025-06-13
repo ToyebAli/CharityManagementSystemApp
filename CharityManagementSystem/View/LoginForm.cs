@@ -67,10 +67,15 @@ namespace CharityManagementSystem.View
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ResigstrationForm resigstrationForm = new ResigstrationForm();
-            resigstrationForm.FormClosed += (s, args) => Application.Exit();
-            resigstrationForm.Show();
             this.Hide();
+            ResigstrationForm resigstrationForm = new ResigstrationForm();
+            resigstrationForm.Show();
+            resigstrationForm.FormClosed += (s, args) => Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

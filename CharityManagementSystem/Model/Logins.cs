@@ -48,7 +48,7 @@ namespace CharityManagementSystem.Model
         }
         public Login SearchLogin(string userId, string password)
         {
-            SqlCommand cmd = sda.GetQuery("SELECT * FROM [user] WHERE userId=@userId AND password=@password;");
+            SqlCommand cmd = sda.GetQuery("SELECT * FROM [User] WHERE userId=@userId AND password=@password;");
             cmd.Parameters.AddWithValue("@userId", userId);
             cmd.Parameters.AddWithValue("@password", password);
             cmd.CommandType = CommandType.Text;

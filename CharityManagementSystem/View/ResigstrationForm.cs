@@ -27,11 +27,6 @@ namespace CharityManagementSystem.View
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtName_TextChanged(object sender, EventArgs e)
         {
 
@@ -43,6 +38,23 @@ namespace CharityManagementSystem.View
         }
 
         private void btnRegistor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+        }
+
+        private void ResigstrationForm_Load(object sender, EventArgs e)
         {
 
         }
