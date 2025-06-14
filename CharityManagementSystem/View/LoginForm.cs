@@ -57,6 +57,10 @@ namespace CharityManagementSystem.View
                 if (login != null && login.UserId.Equals(userId) && login.Password.Equals(password))
                 {
                     MessageBox.Show("Welcome " + login.Name);
+                    this.Hide();
+                    ProfileForm pf = new ProfileForm(login.Name);
+                    pf.ShowDialog();
+                    pf.FormClosed += (s, args) => Application.Exit();
                 }
                 else
                 {
