@@ -58,7 +58,7 @@ namespace CharityManagementSystem.View
                 {
                     MessageBox.Show("Welcome " + login.Name);
                     this.Hide();
-                    ProfileForm pf = new ProfileForm(login.Name);
+                    ProfileForm pf = new ProfileForm(login);
                     pf.ShowDialog();
                     pf.FormClosed += (s, args) => Application.Exit();
                 }

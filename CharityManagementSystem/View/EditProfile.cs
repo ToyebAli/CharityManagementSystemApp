@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CharityManagementSystem.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,25 +13,20 @@ namespace CharityManagementSystem.View
 {
     public partial class EditProfile : Form
     {
-        //private string userId;
-        //private string name;
-        //private string address;
-        //private string dob;
-        //private string gender;
-        //private string email;
-        //private string phoneNo;
+        private string address;
+        private string dob;
+        private string gender;
+        private Login login;
 
-        //string userId, string name, string address, string dob, string gender, string email, string phoneNo
-        public EditProfile()
+        public EditProfile(Login login)
         {
             InitializeComponent();
-            //this.userId = userId;
-            //this.name = name;
-            //this.address = address;
-            //this.dob = dob;
-            //this.gender = gender;
-            //this.email = email;
-            //this.phoneNo = phoneNo;
+            this.login = login;
+            textBox1.Text = login.UserId;
+            textBox2.Text = login.Name;
+            textBox6.Text = login.Email;
+            textBox7.Text = login.PhoneNumber;
+            textBox1.Enabled = false;
         }
 
         private void EditProfile_Load(object sender, EventArgs e)
@@ -46,8 +42,13 @@ namespace CharityManagementSystem.View
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ProfileForm pf = new ProfileForm("User Name"); // Replace "User Name" with actual user name
+            ProfileForm pf = new ProfileForm(this.login);
             pf.Show();
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

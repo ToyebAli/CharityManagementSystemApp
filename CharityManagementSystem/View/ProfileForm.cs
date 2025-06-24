@@ -7,17 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CharityManagementSystem.Model;
 
 namespace CharityManagementSystem.View
 {
     public partial class ProfileForm : Form
     {
-        private string name;
-        public ProfileForm(string name)
+        private Login login;
+        public ProfileForm(Login login)
         {
             InitializeComponent();
-            this.name = name;
-            lblWelcome.Text = $"Welcome, {this.name}!";
+            this.login = login;
+            lblWelcome.Text = $"Welcome, {login.Name}!";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,7 +36,7 @@ namespace CharityManagementSystem.View
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
-            EditProfile ep = new EditProfile();
+            EditProfile ep = new EditProfile(login);
             ep.Show();
         }
     }
