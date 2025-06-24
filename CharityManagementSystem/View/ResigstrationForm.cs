@@ -34,7 +34,12 @@ namespace CharityManagementSystem.View
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
-
+            string userId = Guid.NewGuid().ToString(); // Generate a unique user ID
+            string name = txtName.Text;
+            string email = txtEmail.Text;
+            string phoneNumber = txtPhone.Text;
+            string password = txtPassword.Text;
+            string confirmPassword = txtConfirmPassword.Text;
         }
 
         private void btnRegistor_Click(object sender, EventArgs e)

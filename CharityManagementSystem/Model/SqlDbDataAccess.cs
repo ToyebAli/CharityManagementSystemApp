@@ -9,7 +9,7 @@ namespace CharityManagementSystem.Model
 {
     public class SqlDbDataAccess
     {
-        private const string connectionString = @"Data Source = ANNONYMOUS\SQLEXPRESS; Initial Catalog= Charity Management System; Trusted_Connection=True";
+        private const string connectionString = @"Data Source = LAPTOP-R2N8TUN4\SQLEXPRESS; Initial Catalog= Charity Management System; Trusted_Connection=True";
         public SqlCommand GetQuery(string query)
         {
             var connection = new SqlConnection(connectionString);
