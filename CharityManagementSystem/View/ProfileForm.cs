@@ -31,5 +31,12 @@ namespace CharityManagementSystem.View
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            EditProfile ep = new EditProfile();
+            ep.Show();
+        }
     }
 }
