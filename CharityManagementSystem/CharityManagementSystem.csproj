@@ -50,6 +50,12 @@
     <Compile Include="Model\Login.cs" />
     <Compile Include="Model\Logins.cs" />
     <Compile Include="Model\SqlDbDataAccess.cs" />
+    <Compile Include="View\adminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\adminDashboard.Designer.cs">
+      <DependentUpon>adminDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\EditProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     <Compile Include="View\ResigstrationForm.Designer.cs">
       <DependentUpon>ResigstrationForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\adminDashboard.resx">
+      <DependentUpon>adminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\EditProfile.resx">
       <DependentUpon>EditProfile.cs</DependentUpon>
     </EmbeddedResource>
