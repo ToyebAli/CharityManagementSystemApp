@@ -39,9 +39,14 @@
             this.btnRegistor = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtConfirmPass = new System.Windows.Forms.TextBox();
+            this.txtConfirmPassword = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.nameIsValidLabel = new System.Windows.Forms.Label();
+            this.emailIsValidLabel = new System.Windows.Forms.Label();
+            this.phoneIsValidLabel = new System.Windows.Forms.Label();
+            this.passwordIsValidLabel = new System.Windows.Forms.Label();
+            this.confirmPassIsValidLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -109,7 +114,7 @@
             this.txtPassword.Location = new System.Drawing.Point(263, 279);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(224, 30);
-            this.txtPassword.TabIndex = 9;
+            this.txtPassword.TabIndex = 10;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // txtPhone
@@ -118,7 +123,7 @@
             this.txtPhone.Location = new System.Drawing.Point(263, 206);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(224, 30);
-            this.txtPhone.TabIndex = 10;
+            this.txtPhone.TabIndex = 9;
             // 
             // btnRegistor
             // 
@@ -152,13 +157,13 @@
             this.label6.TabIndex = 17;
             this.label6.Text = "Confirm Password";
             // 
-            // txtConfirmPass
+            // txtConfirmPassword
             // 
-            this.txtConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmPass.Location = new System.Drawing.Point(263, 343);
-            this.txtConfirmPass.Name = "txtConfirmPass";
-            this.txtConfirmPass.Size = new System.Drawing.Size(224, 30);
-            this.txtConfirmPass.TabIndex = 18;
+            this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmPassword.Location = new System.Drawing.Point(263, 343);
+            this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.Size = new System.Drawing.Size(224, 30);
+            this.txtConfirmPassword.TabIndex = 11;
             // 
             // label7
             // 
@@ -177,10 +182,55 @@
             this.button1.Location = new System.Drawing.Point(493, 489);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 36);
-            this.button1.TabIndex = 20;
+            this.button1.TabIndex = 13;
             this.button1.Text = "Log In";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // nameIsValidLabel
+            // 
+            this.nameIsValidLabel.AutoSize = true;
+            this.nameIsValidLabel.ForeColor = System.Drawing.Color.Red;
+            this.nameIsValidLabel.Location = new System.Drawing.Point(260, 118);
+            this.nameIsValidLabel.Name = "nameIsValidLabel";
+            this.nameIsValidLabel.Size = new System.Drawing.Size(0, 16);
+            this.nameIsValidLabel.TabIndex = 20;
+            // 
+            // emailIsValidLabel
+            // 
+            this.emailIsValidLabel.AutoSize = true;
+            this.emailIsValidLabel.ForeColor = System.Drawing.Color.Red;
+            this.emailIsValidLabel.Location = new System.Drawing.Point(260, 179);
+            this.emailIsValidLabel.Name = "emailIsValidLabel";
+            this.emailIsValidLabel.Size = new System.Drawing.Size(0, 16);
+            this.emailIsValidLabel.TabIndex = 21;
+            // 
+            // phoneIsValidLabel
+            // 
+            this.phoneIsValidLabel.AutoSize = true;
+            this.phoneIsValidLabel.ForeColor = System.Drawing.Color.Red;
+            this.phoneIsValidLabel.Location = new System.Drawing.Point(263, 243);
+            this.phoneIsValidLabel.Name = "phoneIsValidLabel";
+            this.phoneIsValidLabel.Size = new System.Drawing.Size(0, 16);
+            this.phoneIsValidLabel.TabIndex = 22;
+            // 
+            // passwordIsValidLabel
+            // 
+            this.passwordIsValidLabel.AutoSize = true;
+            this.passwordIsValidLabel.ForeColor = System.Drawing.Color.Red;
+            this.passwordIsValidLabel.Location = new System.Drawing.Point(263, 316);
+            this.passwordIsValidLabel.Name = "passwordIsValidLabel";
+            this.passwordIsValidLabel.Size = new System.Drawing.Size(0, 16);
+            this.passwordIsValidLabel.TabIndex = 23;
+            // 
+            // confirmPassIsValidLabel
+            // 
+            this.confirmPassIsValidLabel.AutoSize = true;
+            this.confirmPassIsValidLabel.ForeColor = System.Drawing.Color.Red;
+            this.confirmPassIsValidLabel.Location = new System.Drawing.Point(263, 380);
+            this.confirmPassIsValidLabel.Name = "confirmPassIsValidLabel";
+            this.confirmPassIsValidLabel.Size = new System.Drawing.Size(0, 16);
+            this.confirmPassIsValidLabel.TabIndex = 24;
             // 
             // ResigstrationForm
             // 
@@ -188,9 +238,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(920, 546);
+            this.Controls.Add(this.confirmPassIsValidLabel);
+            this.Controls.Add(this.passwordIsValidLabel);
+            this.Controls.Add(this.phoneIsValidLabel);
+            this.Controls.Add(this.emailIsValidLabel);
+            this.Controls.Add(this.nameIsValidLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtConfirmPass);
+            this.Controls.Add(this.txtConfirmPassword);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegistor);
@@ -225,8 +280,13 @@
         private System.Windows.Forms.Button btnRegistor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtConfirmPass;
+        private System.Windows.Forms.TextBox txtConfirmPassword;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label nameIsValidLabel;
+        private System.Windows.Forms.Label emailIsValidLabel;
+        private System.Windows.Forms.Label phoneIsValidLabel;
+        private System.Windows.Forms.Label passwordIsValidLabel;
+        private System.Windows.Forms.Label confirmPassIsValidLabel;
     }
 }

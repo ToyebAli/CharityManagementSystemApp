@@ -16,10 +16,11 @@ namespace CharityManagementSystem.Controller
             return login;
         }
 
-        public void AddLogin(Login login)
+        public bool AddLogin(Login login)
         {
             Logins lgs = new Logins();
             lgs.AddLogin(login);
+            return true;
         }
     }
 }
