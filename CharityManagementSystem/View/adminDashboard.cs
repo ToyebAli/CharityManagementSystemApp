@@ -37,8 +37,13 @@ namespace CharityManagementSystem.View
         private void viewlistbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ViewUserList viewUserList = new ViewUserList();
-            viewUserList.Show();
+            UserListForm userListForm = new UserListForm();
+            userListForm.ShowDialog();
+        }
+
+        private void statistics_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -133,5 +133,12 @@ namespace CharityManagementSystem.View
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+        }
     }
 }

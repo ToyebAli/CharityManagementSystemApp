@@ -278,7 +278,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "EditProfile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditProfile";
             this.Load += new System.EventHandler(this.EditProfile_Load);
             this.ResumeLayout(false);

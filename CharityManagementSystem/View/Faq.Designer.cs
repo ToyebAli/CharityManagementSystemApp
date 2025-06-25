@@ -169,7 +169,9 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Faq";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Faq";
             this.Load += new System.EventHandler(this.Faq_Load);
             this.ResumeLayout(false);

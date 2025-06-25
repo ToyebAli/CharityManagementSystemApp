@@ -99,7 +99,8 @@ namespace CharityManagementSystem.View
                         Name = name,
                         Email = email,
                         PhoneNumber = phoneNumber,
-                        Password = password
+                        Password = password,
+                        Role = 2 // Assuming 2 is the role for a donor
                     };
                     bool isRegistered = loginController.AddLogin(newLogin);
                     if (isRegistered)

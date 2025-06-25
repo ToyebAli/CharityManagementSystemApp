@@ -34,21 +34,20 @@
             this.number = new System.Windows.Forms.Label();
             this.email = new System.Windows.Forms.Label();
             this.address = new System.Windows.Forms.Label();
-            this.profession = new System.Windows.Forms.Label();
-            this.namebox = new System.Windows.Forms.TextBox();
-            this.numberbox = new System.Windows.Forms.TextBox();
-            this.addressbox = new System.Windows.Forms.TextBox();
-            this.agebox = new System.Windows.Forms.TextBox();
-            this.emailbox = new System.Windows.Forms.TextBox();
-            this.professionbox = new System.Windows.Forms.TextBox();
+            this.userIdBox = new System.Windows.Forms.TextBox();
+            this.nameBox = new System.Windows.Forms.TextBox();
+            this.emailBox = new System.Windows.Forms.TextBox();
+            this.phoneBox = new System.Windows.Forms.TextBox();
+            this.roleBox = new System.Windows.Forms.TextBox();
             this.add = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
-            this.approve = new System.Windows.Forms.Button();
-            this.reject = new System.Windows.Forms.Button();
             this.edit = new System.Windows.Forms.Button();
             this.refresh = new System.Windows.Forms.Button();
-            this.gridview = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.gridview)).BeginInit();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.passwordLabel = new System.Windows.Forms.Label();
+            this.passwordBox = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // name
@@ -59,9 +58,9 @@
             this.name.ForeColor = System.Drawing.Color.Black;
             this.name.Location = new System.Drawing.Point(32, 80);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(111, 23);
+            this.name.Size = new System.Drawing.Size(79, 23);
             this.name.TabIndex = 0;
-            this.name.Text = "User Name:";
+            this.name.Text = "User Id:";
             // 
             // age
             // 
@@ -69,11 +68,11 @@
             this.age.BackColor = System.Drawing.Color.Transparent;
             this.age.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.age.ForeColor = System.Drawing.Color.Black;
-            this.age.Location = new System.Drawing.Point(482, 84);
+            this.age.Location = new System.Drawing.Point(454, 84);
             this.age.Name = "age";
-            this.age.Size = new System.Drawing.Size(51, 23);
+            this.age.Size = new System.Drawing.Size(69, 23);
             this.age.TabIndex = 1;
-            this.age.Text = "Age:";
+            this.age.Text = "Phone:";
             // 
             // number
             // 
@@ -83,9 +82,9 @@
             this.number.ForeColor = System.Drawing.Color.Black;
             this.number.Location = new System.Drawing.Point(32, 129);
             this.number.Name = "number";
-            this.number.Size = new System.Drawing.Size(141, 23);
+            this.number.Size = new System.Drawing.Size(66, 23);
             this.number.TabIndex = 2;
-            this.number.Text = "Phone Number:";
+            this.number.Text = "Name:";
             // 
             // email
             // 
@@ -93,11 +92,11 @@
             this.email.BackColor = System.Drawing.Color.Transparent;
             this.email.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.email.ForeColor = System.Drawing.Color.Black;
-            this.email.Location = new System.Drawing.Point(482, 136);
+            this.email.Location = new System.Drawing.Point(454, 131);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(87, 23);
+            this.email.Size = new System.Drawing.Size(56, 23);
             this.email.TabIndex = 3;
-            this.email.Text = "Email Id:";
+            this.email.Text = "Role:";
             // 
             // address
             // 
@@ -107,63 +106,44 @@
             this.address.ForeColor = System.Drawing.Color.Black;
             this.address.Location = new System.Drawing.Point(32, 179);
             this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(85, 23);
+            this.address.Size = new System.Drawing.Size(65, 23);
             this.address.TabIndex = 4;
-            this.address.Text = "Address:";
+            this.address.Text = "Email:";
             // 
-            // profession
+            // userIdBox
             // 
-            this.profession.AutoSize = true;
-            this.profession.BackColor = System.Drawing.Color.Transparent;
-            this.profession.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profession.ForeColor = System.Drawing.Color.Black;
-            this.profession.Location = new System.Drawing.Point(482, 183);
-            this.profession.Name = "profession";
-            this.profession.Size = new System.Drawing.Size(105, 23);
-            this.profession.TabIndex = 5;
-            this.profession.Text = "Profession:";
+            this.userIdBox.Location = new System.Drawing.Point(159, 86);
+            this.userIdBox.Name = "userIdBox";
+            this.userIdBox.Size = new System.Drawing.Size(164, 22);
+            this.userIdBox.TabIndex = 6;
             // 
-            // namebox
+            // nameBox
             // 
-            this.namebox.Location = new System.Drawing.Point(212, 84);
-            this.namebox.Name = "namebox";
-            this.namebox.Size = new System.Drawing.Size(164, 22);
-            this.namebox.TabIndex = 6;
+            this.nameBox.Location = new System.Drawing.Point(159, 131);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(164, 22);
+            this.nameBox.TabIndex = 7;
             // 
-            // numberbox
+            // emailBox
             // 
-            this.numberbox.Location = new System.Drawing.Point(212, 133);
-            this.numberbox.Name = "numberbox";
-            this.numberbox.Size = new System.Drawing.Size(164, 22);
-            this.numberbox.TabIndex = 7;
+            this.emailBox.Location = new System.Drawing.Point(159, 179);
+            this.emailBox.Name = "emailBox";
+            this.emailBox.Size = new System.Drawing.Size(164, 22);
+            this.emailBox.TabIndex = 8;
             // 
-            // addressbox
+            // phoneBox
             // 
-            this.addressbox.Location = new System.Drawing.Point(212, 182);
-            this.addressbox.Name = "addressbox";
-            this.addressbox.Size = new System.Drawing.Size(164, 22);
-            this.addressbox.TabIndex = 8;
+            this.phoneBox.Location = new System.Drawing.Point(601, 84);
+            this.phoneBox.Name = "phoneBox";
+            this.phoneBox.Size = new System.Drawing.Size(174, 22);
+            this.phoneBox.TabIndex = 9;
             // 
-            // agebox
+            // roleBox
             // 
-            this.agebox.Location = new System.Drawing.Point(601, 84);
-            this.agebox.Name = "agebox";
-            this.agebox.Size = new System.Drawing.Size(174, 22);
-            this.agebox.TabIndex = 9;
-            // 
-            // emailbox
-            // 
-            this.emailbox.Location = new System.Drawing.Point(601, 136);
-            this.emailbox.Name = "emailbox";
-            this.emailbox.Size = new System.Drawing.Size(174, 22);
-            this.emailbox.TabIndex = 10;
-            // 
-            // professionbox
-            // 
-            this.professionbox.Location = new System.Drawing.Point(601, 183);
-            this.professionbox.Name = "professionbox";
-            this.professionbox.Size = new System.Drawing.Size(174, 22);
-            this.professionbox.TabIndex = 11;
+            this.roleBox.Location = new System.Drawing.Point(601, 129);
+            this.roleBox.Name = "roleBox";
+            this.roleBox.Size = new System.Drawing.Size(174, 22);
+            this.roleBox.TabIndex = 10;
             // 
             // add
             // 
@@ -176,77 +156,90 @@
             this.add.TabIndex = 12;
             this.add.Text = "Add";
             this.add.UseVisualStyleBackColor = false;
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // delete
             // 
             this.delete.BackColor = System.Drawing.Color.Red;
             this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.delete.Location = new System.Drawing.Point(118, 308);
+            this.delete.Location = new System.Drawing.Point(660, 308);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(75, 38);
+            this.delete.Size = new System.Drawing.Size(89, 38);
             this.delete.TabIndex = 13;
             this.delete.Text = "Delete";
             this.delete.UseVisualStyleBackColor = false;
-            // 
-            // approve
-            // 
-            this.approve.BackColor = System.Drawing.Color.LimeGreen;
-            this.approve.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.approve.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.approve.Location = new System.Drawing.Point(613, 308);
-            this.approve.Name = "approve";
-            this.approve.Size = new System.Drawing.Size(81, 38);
-            this.approve.TabIndex = 14;
-            this.approve.Text = "Approve";
-            this.approve.UseVisualStyleBackColor = false;
-            // 
-            // reject
-            // 
-            this.reject.BackColor = System.Drawing.Color.Red;
-            this.reject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reject.ForeColor = System.Drawing.SystemColors.Control;
-            this.reject.Location = new System.Drawing.Point(700, 308);
-            this.reject.Name = "reject";
-            this.reject.Size = new System.Drawing.Size(75, 38);
-            this.reject.TabIndex = 15;
-            this.reject.Text = "Reject";
-            this.reject.UseVisualStyleBackColor = false;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // edit
             // 
             this.edit.BackColor = System.Drawing.Color.LimeGreen;
             this.edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.edit.Location = new System.Drawing.Point(334, 308);
+            this.edit.Location = new System.Drawing.Point(239, 308);
             this.edit.Name = "edit";
             this.edit.Size = new System.Drawing.Size(75, 38);
             this.edit.TabIndex = 16;
             this.edit.Text = "Edit";
             this.edit.UseVisualStyleBackColor = false;
+            this.edit.Click += new System.EventHandler(this.edit_Click);
             // 
             // refresh
             // 
             this.refresh.BackColor = System.Drawing.Color.LimeGreen;
             this.refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.refresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.refresh.Location = new System.Drawing.Point(415, 308);
+            this.refresh.Location = new System.Drawing.Point(458, 308);
             this.refresh.Name = "refresh";
-            this.refresh.Size = new System.Drawing.Size(75, 38);
+            this.refresh.Size = new System.Drawing.Size(93, 38);
             this.refresh.TabIndex = 17;
             this.refresh.Text = "Refresh";
             this.refresh.UseVisualStyleBackColor = false;
+            this.refresh.Click += new System.EventHandler(this.refresh_Click);
             // 
-            // gridview
+            // dataGridView
             // 
-            this.gridview.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridview.Location = new System.Drawing.Point(32, 361);
-            this.gridview.Name = "gridview";
-            this.gridview.RowHeadersWidth = 51;
-            this.gridview.RowTemplate.Height = 24;
-            this.gridview.Size = new System.Drawing.Size(743, 176);
-            this.gridview.TabIndex = 18;
+            this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Location = new System.Drawing.Point(32, 361);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowHeadersWidth = 51;
+            this.dataGridView.RowTemplate.Height = 24;
+            this.dataGridView.Size = new System.Drawing.Size(743, 176);
+            this.dataGridView.TabIndex = 18;
+            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Indigo;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(24, 22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 35);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // passwordLabel
+            // 
+            this.passwordLabel.AutoSize = true;
+            this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.passwordLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.ForeColor = System.Drawing.Color.Black;
+            this.passwordLabel.Location = new System.Drawing.Point(454, 179);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(97, 23);
+            this.passwordLabel.TabIndex = 20;
+            this.passwordLabel.Text = "Password:";
+            // 
+            // passwordBox
+            // 
+            this.passwordBox.Location = new System.Drawing.Point(601, 179);
+            this.passwordBox.Name = "passwordBox";
+            this.passwordBox.Size = new System.Drawing.Size(174, 22);
+            this.passwordBox.TabIndex = 21;
             // 
             // UserListForm
             // 
@@ -255,29 +248,30 @@
             this.BackColor = System.Drawing.Color.Purple;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 549);
-            this.Controls.Add(this.gridview);
+            this.Controls.Add(this.passwordBox);
+            this.Controls.Add(this.passwordLabel);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.refresh);
             this.Controls.Add(this.edit);
-            this.Controls.Add(this.reject);
-            this.Controls.Add(this.approve);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.add);
-            this.Controls.Add(this.professionbox);
-            this.Controls.Add(this.emailbox);
-            this.Controls.Add(this.agebox);
-            this.Controls.Add(this.addressbox);
-            this.Controls.Add(this.numberbox);
-            this.Controls.Add(this.namebox);
-            this.Controls.Add(this.profession);
+            this.Controls.Add(this.roleBox);
+            this.Controls.Add(this.phoneBox);
+            this.Controls.Add(this.emailBox);
+            this.Controls.Add(this.nameBox);
+            this.Controls.Add(this.userIdBox);
             this.Controls.Add(this.address);
             this.Controls.Add(this.email);
             this.Controls.Add(this.number);
             this.Controls.Add(this.age);
             this.Controls.Add(this.name);
+            this.MaximizeBox = false;
             this.Name = "UserListForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserListForm";
             this.Load += new System.EventHandler(this.UserListForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,19 +284,18 @@
         private System.Windows.Forms.Label number;
         private System.Windows.Forms.Label email;
         private System.Windows.Forms.Label address;
-        private System.Windows.Forms.Label profession;
-        private System.Windows.Forms.TextBox namebox;
-        private System.Windows.Forms.TextBox numberbox;
-        private System.Windows.Forms.TextBox addressbox;
-        private System.Windows.Forms.TextBox agebox;
-        private System.Windows.Forms.TextBox emailbox;
-        private System.Windows.Forms.TextBox professionbox;
+        private System.Windows.Forms.TextBox userIdBox;
+        private System.Windows.Forms.TextBox nameBox;
+        private System.Windows.Forms.TextBox emailBox;
+        private System.Windows.Forms.TextBox phoneBox;
+        private System.Windows.Forms.TextBox roleBox;
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button delete;
-        private System.Windows.Forms.Button approve;
-        private System.Windows.Forms.Button reject;
         private System.Windows.Forms.Button edit;
         private System.Windows.Forms.Button refresh;
-        private System.Windows.Forms.DataGridView gridview;
+        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label passwordLabel;
+        private System.Windows.Forms.TextBox passwordBox;
     }
 }

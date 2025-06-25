@@ -68,5 +68,10 @@ namespace CharityManagementSystem.View
         {
 
         }
+
+        private void Volunteer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

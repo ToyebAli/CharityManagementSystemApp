@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfileForm));
             this.lblWelcome = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -41,8 +42,9 @@
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
+            this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
             this.lblWelcome.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(694, 65);
+            this.lblWelcome.Location = new System.Drawing.Point(13, 21);
             this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(123, 23);
@@ -51,11 +53,11 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(350, 361);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(760, 10);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 59);
+            this.button1.Size = new System.Drawing.Size(98, 34);
             this.button1.TabIndex = 1;
             this.button1.Text = "Log Out";
             this.button1.UseVisualStyleBackColor = true;
@@ -64,10 +66,10 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(68, 55);
+            this.button2.Location = new System.Drawing.Point(0, 179);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(231, 66);
+            this.button2.Size = new System.Drawing.Size(231, 58);
             this.button2.TabIndex = 2;
             this.button2.Text = "Request for Donation";
             this.button2.UseVisualStyleBackColor = true;
@@ -76,7 +78,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(341, 139);
+            this.button3.Location = new System.Drawing.Point(0, 274);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(231, 54);
@@ -88,10 +90,10 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(341, 62);
+            this.button4.Location = new System.Drawing.Point(0, 91);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(231, 59);
+            this.button4.Size = new System.Drawing.Size(231, 51);
             this.button4.TabIndex = 4;
             this.button4.Text = "Edit Profile";
             this.button4.UseVisualStyleBackColor = true;
@@ -99,7 +101,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(68, 139);
+            this.button5.Location = new System.Drawing.Point(0, 382);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(231, 58);
@@ -111,9 +113,9 @@
             // FAQ
             // 
             this.FAQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FAQ.Location = new System.Drawing.Point(698, 12);
+            this.FAQ.Location = new System.Drawing.Point(563, 10);
             this.FAQ.Name = "FAQ";
-            this.FAQ.Size = new System.Drawing.Size(47, 24);
+            this.FAQ.Size = new System.Drawing.Size(82, 34);
             this.FAQ.TabIndex = 6;
             this.FAQ.Text = "FAQ";
             this.FAQ.UseVisualStyleBackColor = true;
@@ -122,9 +124,9 @@
             // contact
             // 
             this.contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contact.Location = new System.Drawing.Point(751, 10);
+            this.contact.Location = new System.Drawing.Point(651, 10);
             this.contact.Name = "contact";
-            this.contact.Size = new System.Drawing.Size(91, 29);
+            this.contact.Size = new System.Drawing.Size(102, 34);
             this.contact.TabIndex = 7;
             this.contact.Text = "Contact us";
             this.contact.UseVisualStyleBackColor = true;
@@ -135,6 +137,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(871, 474);
             this.Controls.Add(this.contact);
             this.Controls.Add(this.FAQ);
@@ -146,7 +149,9 @@
             this.Controls.Add(this.lblWelcome);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "ProfileForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProfileForm";
             this.Load += new System.EventHandler(this.ProfileForm_Load);
             this.ResumeLayout(false);

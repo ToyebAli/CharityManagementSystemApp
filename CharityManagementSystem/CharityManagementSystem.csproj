@@ -54,6 +54,11 @@
     <Compile Include="Model\Profile.cs" />
     <Compile Include="Model\Profiles.cs" />
     <Compile Include="Model\SqlDbDataAccess.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="View\adminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +70,12 @@
     </Compile>
     <Compile Include="View\Beneficiary.Designer.cs">
       <DependentUpon>Beneficiary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bkash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Bkash.Designer.cs">
+      <DependentUpon>Bkash.cs</DependentUpon>
     </Compile>
     <Compile Include="View\ContactUs.cs">
       <SubType>Form</SubType>
@@ -104,6 +115,12 @@
     <Compile Include="View\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Nagad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Nagad.Designer.cs">
+      <DependentUpon>Nagad.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\paymentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +139,12 @@
     <Compile Include="View\ResigstrationForm.Designer.cs">
       <DependentUpon>ResigstrationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Upay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Upay.Designer.cs">
+      <DependentUpon>Upay.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UserListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,18 +157,19 @@
     <Compile Include="View\Volunteer.Designer.cs">
       <DependentUpon>Volunteer.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\ViewUserList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\ViewUserList.Designer.cs">
-      <DependentUpon>ViewUserList.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\adminDashboard.resx">
       <DependentUpon>adminDashboard.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Beneficiary.resx">
       <DependentUpon>Beneficiary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Bkash.resx">
+      <DependentUpon>Bkash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\ContactUs.resx">
       <DependentUpon>ContactUs.cs</DependentUpon>
@@ -165,6 +189,9 @@
     <EmbeddedResource Include="View\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Nagad.resx">
+      <DependentUpon>Nagad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\paymentForm.resx">
       <DependentUpon>paymentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,14 +201,14 @@
     <EmbeddedResource Include="View\ResigstrationForm.resx">
       <DependentUpon>ResigstrationForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Upay.resx">
+      <DependentUpon>Upay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\UserListForm.resx">
       <DependentUpon>UserListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Volunteer.resx">
       <DependentUpon>Volunteer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\ViewUserList.resx">
-      <DependentUpon>ViewUserList.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

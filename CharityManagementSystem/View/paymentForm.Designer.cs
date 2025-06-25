@@ -73,11 +73,12 @@
             this.lowestAmount.Font = new System.Drawing.Font("Bahnschrift", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lowestAmount.Location = new System.Drawing.Point(331, 143);
             this.lowestAmount.Name = "lowestAmount";
-            this.lowestAmount.Size = new System.Drawing.Size(182, 45);
+            this.lowestAmount.Size = new System.Drawing.Size(176, 44);
             this.lowestAmount.TabIndex = 5;
             this.lowestAmount.TabStop = true;
             this.lowestAmount.Text = "5000 BDT";
             this.lowestAmount.UseVisualStyleBackColor = false;
+            this.lowestAmount.CheckedChanged += new System.EventHandler(this.lowestAmount_CheckedChanged);
             // 
             // middleAmount
             // 
@@ -86,11 +87,12 @@
             this.middleAmount.Font = new System.Drawing.Font("Bahnschrift", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.middleAmount.Location = new System.Drawing.Point(331, 194);
             this.middleAmount.Name = "middleAmount";
-            this.middleAmount.Size = new System.Drawing.Size(192, 45);
+            this.middleAmount.Size = new System.Drawing.Size(186, 44);
             this.middleAmount.TabIndex = 6;
             this.middleAmount.TabStop = true;
             this.middleAmount.Text = "10000 BDT";
             this.middleAmount.UseVisualStyleBackColor = false;
+            this.middleAmount.CheckedChanged += new System.EventHandler(this.middleAmount_CheckedChanged);
             // 
             // highestAmount
             // 
@@ -99,11 +101,12 @@
             this.highestAmount.Font = new System.Drawing.Font("Bahnschrift", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.highestAmount.Location = new System.Drawing.Point(331, 245);
             this.highestAmount.Name = "highestAmount";
-            this.highestAmount.Size = new System.Drawing.Size(199, 45);
+            this.highestAmount.Size = new System.Drawing.Size(192, 44);
             this.highestAmount.TabIndex = 7;
             this.highestAmount.TabStop = true;
             this.highestAmount.Text = "20000 BDT";
             this.highestAmount.UseVisualStyleBackColor = false;
+            this.highestAmount.CheckedChanged += new System.EventHandler(this.highestAmount_CheckedChanged_1);
             // 
             // confirm
             // 
@@ -126,6 +129,7 @@
             this.bkash.Size = new System.Drawing.Size(64, 60);
             this.bkash.TabIndex = 9;
             this.bkash.UseVisualStyleBackColor = true;
+            this.bkash.Click += new System.EventHandler(this.bkash_Click);
             // 
             // nagad
             // 
@@ -135,6 +139,7 @@
             this.nagad.Size = new System.Drawing.Size(60, 60);
             this.nagad.TabIndex = 10;
             this.nagad.UseVisualStyleBackColor = true;
+            this.nagad.Click += new System.EventHandler(this.nagad_Click);
             // 
             // button3
             // 
@@ -144,6 +149,7 @@
             this.button3.Size = new System.Drawing.Size(62, 60);
             this.button3.TabIndex = 11;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // enter
             // 
@@ -181,11 +187,12 @@
             this.radioButton1.Font = new System.Drawing.Font("Bahnschrift", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(331, 92);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(174, 45);
+            this.radioButton1.Size = new System.Drawing.Size(169, 44);
             this.radioButton1.TabIndex = 15;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "1000 BDT";
             this.radioButton1.UseVisualStyleBackColor = false;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // paymentForm
             // 
@@ -207,7 +214,9 @@
             this.Controls.Add(this.lowestAmount);
             this.Controls.Add(this.amount);
             this.Controls.Add(this.paymentTextBOX);
+            this.MaximizeBox = false;
             this.Name = "paymentForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "paymentForm";
             this.Load += new System.EventHandler(this.paymentForm_Load);
             this.ResumeLayout(false);

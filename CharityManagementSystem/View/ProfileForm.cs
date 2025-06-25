@@ -30,7 +30,9 @@ namespace CharityManagementSystem.View
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Beneficiary beneficiary = new Beneficiary(login);
+            beneficiary.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)

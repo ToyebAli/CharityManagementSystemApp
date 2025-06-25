@@ -35,5 +35,11 @@ namespace CharityManagementSystem.Controller
             List<Login> loginList = lgs.GetAllLogin();
             return loginList;
         }
+
+        public void DeleteLogin(string userId)
+        {
+            Logins lgs = new Logins();
+            lgs.DeleteLogin(userId);
+        }
     }
 }

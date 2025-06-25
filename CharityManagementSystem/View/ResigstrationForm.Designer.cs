@@ -190,7 +190,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(483, 485);
+            this.button1.Location = new System.Drawing.Point(515, 486);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 45);
             this.button1.TabIndex = 13;
@@ -270,7 +270,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "ResigstrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Resigstration";

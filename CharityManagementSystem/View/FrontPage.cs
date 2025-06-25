@@ -23,5 +23,10 @@ namespace CharityManagementSystem.View
             LoginForm lf = new LoginForm();
             lf.Show();
         }
+
+        private void FrontPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

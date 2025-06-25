@@ -99,5 +99,15 @@ namespace CharityManagementSystem.Model
             List<Login> userList = GetData(cmd);
             return userList;
         }
+
+        public void DeleteLogin(string userId)
+        {
+            SqlCommand cmd = sda.GetQuery("DELETE FROM [User] WHERE userId=@userId;");
+            cmd.Parameters.AddWithValue("@userId", userId);
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection.Open();
+            cmd.ExecuteNonQuery();
+            cmd.Connection.Close();
+        }
     }
 }
