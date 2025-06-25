@@ -39,5 +39,24 @@ namespace CharityManagementSystem.View
             EditProfile ep = new EditProfile(login);
             ep.Show();
         }
+
+        private void FAQ_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Faq faq = new Faq(this.login);
+            faq.Show();
+        }
+
+        private void contact_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Contact_Us C = new Contact_Us(login);
+            C.Show();
+        }
+
+        private void ProfileForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

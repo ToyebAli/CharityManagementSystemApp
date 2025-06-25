@@ -40,6 +40,7 @@
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -148,11 +149,22 @@
             this.richTextBox3.Text = "Yes, donors can set up monthly or yearly recurring donations for continuous suppo" +
     "rt.";
             // 
+            // back
+            // 
+            this.back.Location = new System.Drawing.Point(906, 12);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.TabIndex = 15;
+            this.back.Text = "Back ";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // Faq
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1197, 486);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.richTextBox2);
@@ -166,6 +178,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Faq";
             this.Text = "Faq";
+            this.Load += new System.EventHandler(this.Faq_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,5 +196,6 @@
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.Button back;
     }
 }
