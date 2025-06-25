@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+CharityManagementSystem/backtobright.jpg
+CharityManagementSystem/View/adminDashboard.cs
+CharityManagementSystem/View/adminDashboard.Designer.cs
