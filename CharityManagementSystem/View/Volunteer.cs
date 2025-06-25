@@ -63,5 +63,10 @@ namespace CharityManagementSystem.View
             ProfileForm pf = new ProfileForm(login);
             pf.Show();
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

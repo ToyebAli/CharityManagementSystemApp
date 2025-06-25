@@ -42,12 +42,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.CausesValidation = false;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(149, 87);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(127, 101);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 29);
+            this.label1.Size = new System.Drawing.Size(104, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Username";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -55,10 +55,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(149, 167);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(127, 161);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 29);
+            this.label2.Size = new System.Drawing.Size(102, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
@@ -66,7 +67,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.textBox1.Location = new System.Drawing.Point(315, 84);
+            this.textBox1.Location = new System.Drawing.Point(255, 101);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(247, 34);
             this.textBox1.TabIndex = 2;
@@ -76,7 +77,7 @@
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.textBox2.Location = new System.Drawing.Point(315, 162);
+            this.textBox2.Location = new System.Drawing.Point(255, 153);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(247, 34);
@@ -85,19 +86,21 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(275, 241);
+            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(408, 211);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 41);
+            this.button1.Size = new System.Drawing.Size(94, 39);
             this.button1.TabIndex = 4;
             this.button1.Text = "Sign In";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(295, 434);
+            this.button2.Location = new System.Drawing.Point(302, 378);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 37);
             this.button2.TabIndex = 5;
@@ -107,21 +110,23 @@
             // 
             // registerNow
             // 
+            this.registerNow.BackColor = System.Drawing.Color.CornflowerBlue;
             this.registerNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerNow.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.registerNow.Location = new System.Drawing.Point(366, 331);
+            this.registerNow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.registerNow.Location = new System.Drawing.Point(366, 297);
             this.registerNow.Name = "registerNow";
             this.registerNow.Size = new System.Drawing.Size(136, 35);
             this.registerNow.TabIndex = 7;
             this.registerNow.Text = "Register Now";
-            this.registerNow.UseVisualStyleBackColor = true;
+            this.registerNow.UseVisualStyleBackColor = false;
             this.registerNow.Click += new System.EventHandler(this.button3_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(149, 332);
+            this.label3.Location = new System.Drawing.Point(140, 298);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(211, 28);
             this.label3.TabIndex = 8;
@@ -131,7 +136,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 486);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(678, 466);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.registerNow);
             this.Controls.Add(this.button2);
