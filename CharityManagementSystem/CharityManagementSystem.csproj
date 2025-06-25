@@ -110,6 +110,12 @@
     <Compile Include="View\UserListForm.Designer.cs">
       <DependentUpon>UserListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ViewUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ViewUserList.Designer.cs">
+      <DependentUpon>ViewUserList.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\adminDashboard.resx">
       <DependentUpon>adminDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\UserListForm.resx">
       <DependentUpon>UserListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ViewUserList.resx">
+      <DependentUpon>ViewUserList.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
