@@ -58,5 +58,19 @@ namespace CharityManagementSystem.View
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Volunteer vltr = new Volunteer(login);
+            vltr.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu mn = new Menu(login);
+            mn.Show();
+        }
     }
 }

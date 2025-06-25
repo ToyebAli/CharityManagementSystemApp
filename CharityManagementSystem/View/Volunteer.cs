@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CharityManagementSystem.Model;
 
 namespace CharityManagementSystem.View
 {
     public partial class Volunteer : Form
     {
-        public Volunteer()
+        Login login;
+        public Volunteer(Login login)
         {
             InitializeComponent();
+            this.login = login;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -52,6 +55,13 @@ namespace CharityManagementSystem.View
                     "Application Successful",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ProfileForm pf = new ProfileForm(login);
+            pf.Show();
         }
     }
 }

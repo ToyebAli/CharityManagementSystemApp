@@ -40,6 +40,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.enter = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // paymentTextBOX
@@ -58,7 +59,7 @@
             this.amount.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.amount.Location = new System.Drawing.Point(116, 278);
             this.amount.Name = "amount";
-            this.amount.Size = new System.Drawing.Size(271, 38);
+            this.amount.Size = new System.Drawing.Size(260, 37);
             this.amount.TabIndex = 4;
             this.amount.Text = "Payment Amount";
             // 
@@ -68,7 +69,7 @@
             this.lowestAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lowestAmount.Location = new System.Drawing.Point(429, 293);
             this.lowestAmount.Name = "lowestAmount";
-            this.lowestAmount.Size = new System.Drawing.Size(149, 43);
+            this.lowestAmount.Size = new System.Drawing.Size(145, 42);
             this.lowestAmount.TabIndex = 5;
             this.lowestAmount.TabStop = true;
             this.lowestAmount.Text = "5000 tk";
@@ -80,7 +81,7 @@
             this.middleAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.middleAmount.Location = new System.Drawing.Point(429, 355);
             this.middleAmount.Name = "middleAmount";
-            this.middleAmount.Size = new System.Drawing.Size(168, 43);
+            this.middleAmount.Size = new System.Drawing.Size(163, 42);
             this.middleAmount.TabIndex = 6;
             this.middleAmount.TabStop = true;
             this.middleAmount.Text = "10000 tk";
@@ -92,7 +93,7 @@
             this.highestAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.highestAmount.Location = new System.Drawing.Point(429, 413);
             this.highestAmount.Name = "highestAmount";
-            this.highestAmount.Size = new System.Drawing.Size(168, 43);
+            this.highestAmount.Size = new System.Drawing.Size(163, 42);
             this.highestAmount.TabIndex = 7;
             this.highestAmount.TabStop = true;
             this.highestAmount.Text = "20000 tk";
@@ -107,6 +108,7 @@
             this.confirm.TabIndex = 8;
             this.confirm.Text = "Confirm Payment";
             this.confirm.UseVisualStyleBackColor = true;
+            this.confirm.Click += new System.EventHandler(this.confirm_Click);
             // 
             // bkash
             // 
@@ -142,7 +144,7 @@
             this.enter.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enter.Location = new System.Drawing.Point(685, 296);
             this.enter.Name = "enter";
-            this.enter.Size = new System.Drawing.Size(225, 38);
+            this.enter.Size = new System.Drawing.Size(217, 37);
             this.enter.TabIndex = 12;
             this.enter.Text = "Enter Amount";
             // 
@@ -154,12 +156,23 @@
             this.textBox1.Size = new System.Drawing.Size(197, 45);
             this.textBox1.TabIndex = 13;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(31, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(83, 33);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // paymentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(963, 594);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.enter);
             this.Controls.Add(this.button3);
@@ -192,5 +205,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label enter;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
