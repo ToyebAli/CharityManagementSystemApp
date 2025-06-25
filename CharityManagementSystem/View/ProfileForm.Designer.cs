@@ -79,7 +79,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(231, 54);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Go to Menu";
+            this.button3.Text = "Go for Donation";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4

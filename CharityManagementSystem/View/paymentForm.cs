@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace CharityManagementSystem.View
 {
-    public partial class Contact_Us: Form
+    public partial class paymentForm: Form
     {
-        public Contact_Us()
+        public paymentForm()
         {
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void paymentForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }
