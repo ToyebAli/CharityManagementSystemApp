@@ -60,6 +60,12 @@
     <Compile Include="View\adminDashboard.Designer.cs">
       <DependentUpon>adminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Beneficiary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Beneficiary.Designer.cs">
+      <DependentUpon>Beneficiary.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\ContactUs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,7 +127,7 @@
     </Compile>
     <Compile Include="View\Volunteer.Designer.cs">
       <DependentUpon>Volunteer.cs</DependentUpon>
-	</Compile>
+    </Compile>
     <Compile Include="View\ViewUserList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     <EmbeddedResource Include="View\adminDashboard.resx">
       <DependentUpon>adminDashboard.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Beneficiary.resx">
+      <DependentUpon>Beneficiary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\ContactUs.resx">
       <DependentUpon>ContactUs.cs</DependentUpon>
@@ -152,6 +161,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -170,7 +180,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Volunteer.resx">
       <DependentUpon>Volunteer.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\ViewUserList.resx">
       <DependentUpon>ViewUserList.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +197,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\charity.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
