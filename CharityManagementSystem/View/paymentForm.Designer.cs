@@ -41,88 +41,96 @@
             this.enter = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // paymentTextBOX
             // 
             this.paymentTextBOX.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.paymentTextBOX.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paymentTextBOX.Location = new System.Drawing.Point(137, 54);
+            this.paymentTextBOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.paymentTextBOX.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paymentTextBOX.Location = new System.Drawing.Point(60, 342);
             this.paymentTextBOX.Name = "paymentTextBOX";
-            this.paymentTextBOX.Size = new System.Drawing.Size(541, 57);
+            this.paymentTextBOX.Size = new System.Drawing.Size(198, 27);
             this.paymentTextBOX.TabIndex = 0;
-            this.paymentTextBOX.Text = "How would you like to pay?";
+            this.paymentTextBOX.Text = "  Payment Method";
             // 
             // amount
             // 
             this.amount.AutoSize = true;
-            this.amount.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amount.Location = new System.Drawing.Point(116, 278);
+            this.amount.BackColor = System.Drawing.Color.Transparent;
+            this.amount.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amount.Location = new System.Drawing.Point(54, 92);
             this.amount.Name = "amount";
-            this.amount.Size = new System.Drawing.Size(260, 37);
+            this.amount.Size = new System.Drawing.Size(230, 32);
             this.amount.TabIndex = 4;
-            this.amount.Text = "Payment Amount";
+            this.amount.Text = "Payment Amount:";
             // 
             // lowestAmount
             // 
             this.lowestAmount.AutoSize = true;
-            this.lowestAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lowestAmount.Location = new System.Drawing.Point(429, 293);
+            this.lowestAmount.BackColor = System.Drawing.Color.Transparent;
+            this.lowestAmount.Font = new System.Drawing.Font("Bahnschrift", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lowestAmount.Location = new System.Drawing.Point(331, 143);
             this.lowestAmount.Name = "lowestAmount";
-            this.lowestAmount.Size = new System.Drawing.Size(145, 42);
+            this.lowestAmount.Size = new System.Drawing.Size(182, 45);
             this.lowestAmount.TabIndex = 5;
             this.lowestAmount.TabStop = true;
-            this.lowestAmount.Text = "5000 tk";
-            this.lowestAmount.UseVisualStyleBackColor = true;
+            this.lowestAmount.Text = "5000 BDT";
+            this.lowestAmount.UseVisualStyleBackColor = false;
             // 
             // middleAmount
             // 
             this.middleAmount.AutoSize = true;
-            this.middleAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.middleAmount.Location = new System.Drawing.Point(429, 355);
+            this.middleAmount.BackColor = System.Drawing.Color.Transparent;
+            this.middleAmount.Font = new System.Drawing.Font("Bahnschrift", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.middleAmount.Location = new System.Drawing.Point(331, 194);
             this.middleAmount.Name = "middleAmount";
-            this.middleAmount.Size = new System.Drawing.Size(163, 42);
+            this.middleAmount.Size = new System.Drawing.Size(192, 45);
             this.middleAmount.TabIndex = 6;
             this.middleAmount.TabStop = true;
-            this.middleAmount.Text = "10000 tk";
-            this.middleAmount.UseVisualStyleBackColor = true;
+            this.middleAmount.Text = "10000 BDT";
+            this.middleAmount.UseVisualStyleBackColor = false;
             // 
             // highestAmount
             // 
             this.highestAmount.AutoSize = true;
-            this.highestAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.highestAmount.Location = new System.Drawing.Point(429, 413);
+            this.highestAmount.BackColor = System.Drawing.Color.Transparent;
+            this.highestAmount.Font = new System.Drawing.Font("Bahnschrift", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.highestAmount.Location = new System.Drawing.Point(331, 245);
             this.highestAmount.Name = "highestAmount";
-            this.highestAmount.Size = new System.Drawing.Size(163, 42);
+            this.highestAmount.Size = new System.Drawing.Size(199, 45);
             this.highestAmount.TabIndex = 7;
             this.highestAmount.TabStop = true;
-            this.highestAmount.Text = "20000 tk";
-            this.highestAmount.UseVisualStyleBackColor = true;
+            this.highestAmount.Text = "20000 BDT";
+            this.highestAmount.UseVisualStyleBackColor = false;
             // 
             // confirm
             // 
-            this.confirm.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirm.Location = new System.Drawing.Point(594, 481);
+            this.confirm.BackColor = System.Drawing.Color.LimeGreen;
+            this.confirm.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirm.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.confirm.Location = new System.Drawing.Point(569, 365);
             this.confirm.Name = "confirm";
-            this.confirm.Size = new System.Drawing.Size(338, 80);
+            this.confirm.Size = new System.Drawing.Size(216, 56);
             this.confirm.TabIndex = 8;
             this.confirm.Text = "Confirm Payment";
-            this.confirm.UseVisualStyleBackColor = true;
+            this.confirm.UseVisualStyleBackColor = false;
             this.confirm.Click += new System.EventHandler(this.confirm_Click);
             // 
             // bkash
             // 
             this.bkash.Image = ((System.Drawing.Image)(resources.GetObject("bkash.Image")));
-            this.bkash.Location = new System.Drawing.Point(162, 166);
+            this.bkash.Location = new System.Drawing.Point(60, 375);
             this.bkash.Name = "bkash";
-            this.bkash.Size = new System.Drawing.Size(60, 60);
+            this.bkash.Size = new System.Drawing.Size(64, 60);
             this.bkash.TabIndex = 9;
             this.bkash.UseVisualStyleBackColor = true;
             // 
             // nagad
             // 
             this.nagad.Image = ((System.Drawing.Image)(resources.GetObject("nagad.Image")));
-            this.nagad.Location = new System.Drawing.Point(356, 166);
+            this.nagad.Location = new System.Drawing.Point(130, 375);
             this.nagad.Name = "nagad";
             this.nagad.Size = new System.Drawing.Size(60, 60);
             this.nagad.TabIndex = 10;
@@ -131,47 +139,62 @@
             // button3
             // 
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(563, 166);
+            this.button3.Location = new System.Drawing.Point(196, 375);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(60, 60);
+            this.button3.Size = new System.Drawing.Size(62, 60);
             this.button3.TabIndex = 11;
-            this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // enter
             // 
             this.enter.AutoSize = true;
-            this.enter.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.enter.Location = new System.Drawing.Point(685, 296);
+            this.enter.BackColor = System.Drawing.Color.Transparent;
+            this.enter.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enter.Location = new System.Drawing.Point(338, 337);
             this.enter.Name = "enter";
-            this.enter.Size = new System.Drawing.Size(217, 37);
+            this.enter.Size = new System.Drawing.Size(185, 32);
             this.enter.TabIndex = 12;
-            this.enter.Text = "Enter Amount";
+            this.enter.Text = "Total Amount:";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(702, 355);
+            this.textBox1.Location = new System.Drawing.Point(333, 376);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(197, 45);
             this.textBox1.TabIndex = 13;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(31, 28);
+            this.button1.Location = new System.Drawing.Point(60, 33);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 33);
+            this.button1.Size = new System.Drawing.Size(85, 33);
             this.button1.TabIndex = 14;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton1.Font = new System.Drawing.Font("Bahnschrift", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(331, 92);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(174, 45);
+            this.radioButton1.TabIndex = 15;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "1000 BDT";
+            this.radioButton1.UseVisualStyleBackColor = false;
             // 
             // paymentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(963, 594);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(814, 516);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.enter);
@@ -206,5 +229,6 @@
         private System.Windows.Forms.Label enter;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

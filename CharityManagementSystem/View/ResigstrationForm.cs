@@ -169,5 +169,10 @@ namespace CharityManagementSystem.View
             string pattern = @"^01[0-9]{9}$";
             return Regex.IsMatch(phone, pattern);
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
