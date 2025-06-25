@@ -116,19 +116,17 @@
     <Compile Include="View\UserListForm.Designer.cs">
       <DependentUpon>UserListForm.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="View\Volunteer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Volunteer.Designer.cs">
       <DependentUpon>Volunteer.cs</DependentUpon>
-=======
+	</Compile>
     <Compile Include="View\ViewUserList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\ViewUserList.Designer.cs">
       <DependentUpon>ViewUserList.cs</DependentUpon>
->>>>>>> 1e00e327bc1935b56b8db1c1b26d9de4d73ff60f
     </Compile>
     <EmbeddedResource Include="View\adminDashboard.resx">
       <DependentUpon>adminDashboard.cs</DependentUpon>
@@ -170,13 +168,11 @@
     <EmbeddedResource Include="View\UserListForm.resx">
       <DependentUpon>UserListForm.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="View\Volunteer.resx">
       <DependentUpon>Volunteer.cs</DependentUpon>
-=======
+	</EmbeddedResource>
     <EmbeddedResource Include="View\ViewUserList.resx">
       <DependentUpon>ViewUserList.cs</DependentUpon>
->>>>>>> 1e00e327bc1935b56b8db1c1b26d9de4d73ff60f
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
