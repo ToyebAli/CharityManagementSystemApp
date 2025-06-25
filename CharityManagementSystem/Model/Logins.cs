@@ -77,5 +77,19 @@ namespace CharityManagementSystem.Model
                 return null;
             }
         }
+
+        public void UpdateLogin(Login login)
+        {
+            SqlCommand cmd = sda.GetQuery("UPDATE [User] SET  name=@name, email=@email, password=@password, phoneNumber = @phoneNumber WHERE userId=@userId;");
+            cmd.Parameters.AddWithValue("@userId", login.UserId);
+            cmd.Parameters.AddWithValue("@name", login.Name);
+            cmd.Parameters.AddWithValue("@email", login.Email);
+            cmd.Parameters.AddWithValue("@password", login.Password);
+            cmd.Parameters.AddWithValue("@phoneNumber", login.PhoneNumber);
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection.Open();
+            cmd.ExecuteNonQuery();
+            cmd.Connection.Close();
+        }
     }
 }
