@@ -124,6 +124,7 @@
     </Compile>
     <EmbeddedResource Include="View\adminDashboard.resx">
       <DependentUpon>adminDashboard.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="View\ContactUs.resx">
       <DependentUpon>ContactUs.cs</DependentUpon>
