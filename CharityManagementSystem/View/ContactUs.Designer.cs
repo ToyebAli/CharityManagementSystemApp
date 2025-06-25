@@ -40,6 +40,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -156,11 +157,22 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "(Office Hours:Mon-Fri,10am-7pm)";
             // 
+            // back
+            // 
+            this.back.Location = new System.Drawing.Point(640, 322);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(103, 49);
+            this.back.TabIndex = 13;
+            this.back.Text = "Back";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // Contact_Us
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label8);
@@ -194,5 +206,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button back;
     }
 }

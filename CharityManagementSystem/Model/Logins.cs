@@ -91,5 +91,13 @@ namespace CharityManagementSystem.Model
             cmd.ExecuteNonQuery();
             cmd.Connection.Close();
         }
+
+        public List<Login> GetAllLogin()
+        {
+            SqlCommand cmd = sda.GetQuery("SELECT * FROM [User];");
+            cmd.CommandType = CommandType.Text;
+            List<Login> userList = GetData(cmd);
+            return userList;
+        }
     }
 }

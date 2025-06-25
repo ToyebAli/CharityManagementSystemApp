@@ -54,7 +54,15 @@ namespace CharityManagementSystem.View
                 LoginController lgc = new LoginController();
                 Login login = lgc.SearchLogin(userId, password);
 
-                if (login != null && login.UserId.Equals(userId) && login.Password.Equals(password))
+                if (login != null && login.UserId.Equals(userId) && login.Password.Equals(password) && login.Role == 1)
+                {
+                    MessageBox.Show("Welcome " + login.Name);
+                    this.Hide();
+                    adminDashboard ad = new adminDashboard();
+                    ad.Show();
+                }
+
+                else if(login != null && login.UserId.Equals(userId) && login.Password.Equals(password))
                 {
                     MessageBox.Show("Welcome " + login.Name);
                     this.Hide();
@@ -62,6 +70,7 @@ namespace CharityManagementSystem.View
                     pf.ShowDialog();
                     pf.FormClosed += (s, args) => Application.Exit();
                 }
+
                 else
                 {
                     MessageBox.Show("Invalid Username or Password ");
