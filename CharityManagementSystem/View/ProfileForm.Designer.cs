@@ -34,6 +34,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.FAQ = new System.Windows.Forms.Button();
+            this.contact = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblWelcome
@@ -104,12 +106,36 @@
             this.button5.Text = "Join as Voulenteer";
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // FAQ
+            // 
+            this.FAQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FAQ.Location = new System.Drawing.Point(698, 12);
+            this.FAQ.Name = "FAQ";
+            this.FAQ.Size = new System.Drawing.Size(47, 24);
+            this.FAQ.TabIndex = 6;
+            this.FAQ.Text = "FAQ";
+            this.FAQ.UseVisualStyleBackColor = true;
+            this.FAQ.Click += new System.EventHandler(this.FAQ_Click);
+            // 
+            // contact
+            // 
+            this.contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contact.Location = new System.Drawing.Point(751, 10);
+            this.contact.Name = "contact";
+            this.contact.Size = new System.Drawing.Size(91, 29);
+            this.contact.TabIndex = 7;
+            this.contact.Text = "Contact us";
+            this.contact.UseVisualStyleBackColor = true;
+            this.contact.Click += new System.EventHandler(this.contact_Click);
+            // 
             // ProfileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(871, 474);
+            this.Controls.Add(this.contact);
+            this.Controls.Add(this.FAQ);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -120,6 +146,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProfileForm";
             this.Text = "ProfileForm";
+            this.Load += new System.EventHandler(this.ProfileForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,5 +160,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button FAQ;
+        private System.Windows.Forms.Button contact;
     }
 }
