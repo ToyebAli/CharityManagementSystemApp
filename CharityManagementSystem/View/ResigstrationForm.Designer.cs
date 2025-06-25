@@ -95,7 +95,7 @@
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(263, 85);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(224, 30);
+            this.txtName.Size = new System.Drawing.Size(326, 30);
             this.txtName.TabIndex = 7;
             this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
@@ -113,7 +113,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(263, 279);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(224, 30);
+            this.txtPassword.Size = new System.Drawing.Size(326, 30);
             this.txtPassword.TabIndex = 10;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
@@ -122,14 +122,14 @@
             this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.Location = new System.Drawing.Point(263, 206);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(224, 30);
+            this.txtPhone.Size = new System.Drawing.Size(326, 30);
             this.txtPhone.TabIndex = 9;
             // 
             // btnRegistor
             // 
             this.btnRegistor.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnRegistor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistor.Location = new System.Drawing.Point(386, 410);
+            this.btnRegistor.Location = new System.Drawing.Point(354, 397);
             this.btnRegistor.Name = "btnRegistor";
             this.btnRegistor.Size = new System.Drawing.Size(152, 47);
             this.btnRegistor.TabIndex = 12;
@@ -141,7 +141,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(324, 21);
+            this.label1.Location = new System.Drawing.Point(334, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(288, 38);
             this.label1.TabIndex = 16;
@@ -162,7 +162,7 @@
             this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmPassword.Location = new System.Drawing.Point(263, 343);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.Size = new System.Drawing.Size(224, 30);
+            this.txtConfirmPassword.Size = new System.Drawing.Size(326, 30);
             this.txtConfirmPassword.TabIndex = 11;
             // 
             // label7
