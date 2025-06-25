@@ -78,6 +78,12 @@
     <Compile Include="View\Faq.Designer.cs">
       <DependentUpon>Faq.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrontPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrontPage.Designer.cs">
+      <DependentUpon>FrontPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,7 +127,7 @@
     </Compile>
     <Compile Include="View\Volunteer.Designer.cs">
       <DependentUpon>Volunteer.cs</DependentUpon>
-	</Compile>
+    </Compile>
     <Compile Include="View\ViewUserList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Faq.resx">
       <DependentUpon>Faq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrontPage.resx">
+      <DependentUpon>FrontPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -170,7 +179,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Volunteer.resx">
       <DependentUpon>Volunteer.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\ViewUserList.resx">
       <DependentUpon>ViewUserList.cs</DependentUpon>
     </EmbeddedResource>
