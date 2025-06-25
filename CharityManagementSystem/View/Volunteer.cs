@@ -16,5 +16,42 @@ namespace CharityManagementSystem.View
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You have successfully applied as a volunteer for this event.\nThank you for your support!",
+                    "Application Successful",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You have successfully applied as a volunteer for this event.\nThank you for your support!",
+                    "Application Successful",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You have successfully applied as a volunteer for this event.\nThank you for your support!",
+                    "Application Successful",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You have successfully applied as a volunteer for this event.\nThank you for your support!",
+                    "Application Successful",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+        }
     }
 }
