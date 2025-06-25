@@ -250,6 +250,7 @@
             this.Controls.Add(this.name);
             this.Name = "UserListForm";
             this.Text = "UserListForm";
+            this.Load += new System.EventHandler(this.UserListForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

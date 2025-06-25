@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace CharityManagementSystem.View
 {
-    public partial class UserListForm: Form
+    public partial class Faq: Form
     {
-        public UserListForm()
+        public Faq()
         {
             InitializeComponent();
         }
 
-        private void UserListForm_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
