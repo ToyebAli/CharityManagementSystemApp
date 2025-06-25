@@ -28,5 +28,12 @@ namespace CharityManagementSystem.Controller
             Logins lgs = new Logins();
             lgs.UpdateLogin(login);
         }
+
+        public List<Login> GetAllLogin()
+        {
+            Logins lgs = new Logins();
+            List<Login> loginList = lgs.GetAllLogin();
+            return loginList;
+        }
     }
 }
