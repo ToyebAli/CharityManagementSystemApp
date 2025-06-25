@@ -22,5 +22,11 @@ namespace CharityManagementSystem.Controller
             lgs.AddLogin(login);
             return true;
         }
+
+        public void UpdateLogin(Login login)
+        {
+            Logins lgs = new Logins();
+            lgs.UpdateLogin(login);
+        }
     }
 }
