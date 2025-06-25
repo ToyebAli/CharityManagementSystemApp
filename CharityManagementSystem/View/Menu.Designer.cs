@@ -73,7 +73,7 @@
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
             this.label1.Location = new System.Drawing.Point(592, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(290, 57);
+            this.label1.Size = new System.Drawing.Size(278, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "Current Campaign";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -351,7 +351,7 @@
             // button5
             // 
             this.button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button5.BackColor = System.Drawing.Color.DarkGreen;
+            this.button5.BackColor = System.Drawing.Color.MidnightBlue;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Transparent;
             this.button5.Location = new System.Drawing.Point(50, 26);
