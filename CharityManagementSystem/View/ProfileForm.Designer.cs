@@ -37,6 +37,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.FAQ = new System.Windows.Forms.Button();
             this.contact = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblWelcome
@@ -132,6 +133,17 @@
             this.contact.UseVisualStyleBackColor = true;
             this.contact.Click += new System.EventHandler(this.contact_Click);
             // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(446, 10);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(111, 34);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Notification";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // ProfileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -139,6 +151,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(871, 474);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.contact);
             this.Controls.Add(this.FAQ);
             this.Controls.Add(this.button5);
@@ -169,5 +182,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button FAQ;
         private System.Windows.Forms.Button contact;
+        private System.Windows.Forms.Button button6;
     }
 }

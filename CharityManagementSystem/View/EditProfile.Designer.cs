@@ -38,10 +38,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -50,6 +48,8 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -143,13 +143,6 @@
             this.textBox3.Size = new System.Drawing.Size(147, 22);
             this.textBox3.TabIndex = 9;
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(227, 209);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(147, 22);
-            this.textBox4.TabIndex = 10;
-            // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(227, 322);
@@ -163,20 +156,6 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(147, 22);
             this.textBox7.TabIndex = 13;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.listBox1.Location = new System.Drawing.Point(227, 265);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.ScrollAlwaysVisible = true;
-            this.listBox1.Size = new System.Drawing.Size(147, 20);
-            this.listBox1.TabIndex = 14;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -193,9 +172,9 @@
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.Location = new System.Drawing.Point(551, 353);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(115, 46);
+            this.btnSubmit.Size = new System.Drawing.Size(161, 48);
             this.btnSubmit.TabIndex = 16;
-            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.Text = "Save Changes";
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
@@ -215,6 +194,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(155, 22);
             this.textBox5.TabIndex = 18;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label9
             // 
@@ -230,6 +210,7 @@
             // 
             this.textBox8.Location = new System.Drawing.Point(578, 125);
             this.textBox8.Name = "textBox8";
+            this.textBox8.PasswordChar = '@';
             this.textBox8.Size = new System.Drawing.Size(155, 22);
             this.textBox8.TabIndex = 20;
             // 
@@ -247,8 +228,27 @@
             // 
             this.textBox9.Location = new System.Drawing.Point(578, 207);
             this.textBox9.Name = "textBox9";
+            this.textBox9.PasswordChar = '@';
             this.textBox9.Size = new System.Drawing.Size(155, 22);
             this.textBox9.TabIndex = 22;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(227, 205);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(147, 22);
+            this.dateTimePicker1.TabIndex = 23;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.comboBox1.Location = new System.Drawing.Point(227, 261);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(147, 24);
+            this.comboBox1.TabIndex = 24;
             // 
             // EditProfile
             // 
@@ -256,6 +256,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox8);
@@ -264,10 +266,8 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -300,10 +300,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label label8;
@@ -312,5 +310,7 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

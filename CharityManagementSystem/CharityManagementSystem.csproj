@@ -47,17 +47,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\ApplicationController.cs" />
+    <Compile Include="Controller\CampaignController.cs" />
+    <Compile Include="Controller\DonationController.cs" />
+    <Compile Include="Controller\EventController.cs" />
+    <Compile Include="Controller\GivenController.cs" />
     <Compile Include="Controller\LoginController.cs" />
+    <Compile Include="Controller\MakeController.cs" />
+    <Compile Include="Controller\NotificationController.cs" />
     <Compile Include="Controller\ProfileController.cs" />
+    <Compile Include="Controller\RegisterController.cs" />
+    <Compile Include="Controller\SubmitController.cs" />
+    <Compile Include="Model\Application.cs" />
+    <Compile Include="Model\Applications.cs" />
+    <Compile Include="Model\Campaign.cs" />
+    <Compile Include="Model\Campaigns.cs" />
+    <Compile Include="Model\Donation.cs" />
+    <Compile Include="Model\Donations.cs" />
+    <Compile Include="Model\Event.cs" />
+    <Compile Include="Model\Events.cs" />
+    <Compile Include="Model\Given.cs" />
+    <Compile Include="Model\Givens.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="Model\Logins.cs" />
+    <Compile Include="Model\Make.cs" />
+    <Compile Include="Model\Makes.cs" />
+    <Compile Include="Model\Notification.cs" />
+    <Compile Include="Model\Notifications.cs" />
     <Compile Include="Model\Profile.cs" />
     <Compile Include="Model\Profiles.cs" />
+    <Compile Include="Model\Register.cs" />
+    <Compile Include="Model\Registers.cs" />
     <Compile Include="Model\SqlDbDataAccess.cs" />
+    <Compile Include="Model\Submit.cs" />
+    <Compile Include="Model\Submits.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddCampaign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddCampaign.Designer.cs">
+      <DependentUpon>AddCampaign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddEvent.Designer.cs">
+      <DependentUpon>AddEvent.cs</DependentUpon>
     </Compile>
     <Compile Include="View\adminDashboard.cs">
       <SubType>Form</SubType>
@@ -65,23 +104,35 @@
     <Compile Include="View\adminDashboard.Designer.cs">
       <DependentUpon>adminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ApplicationListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ApplicationListForm.Designer.cs">
+      <DependentUpon>ApplicationListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Beneficiary.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Beneficiary.Designer.cs">
       <DependentUpon>Beneficiary.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Bkash.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Bkash.Designer.cs">
-      <DependentUpon>Bkash.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\ContactUs.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\ContactUs.Designer.cs">
       <DependentUpon>ContactUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DonationListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DonationListForm.Designer.cs">
+      <DependentUpon>DonationListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DonationRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DonationRecordForm.Designer.cs">
+      <DependentUpon>DonationRecordForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\EditProfile.cs">
       <SubType>Form</SubType>
@@ -94,6 +145,12 @@
     </Compile>
     <Compile Include="View\Faq.Designer.cs">
       <DependentUpon>Faq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ForgotPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ForgotPass.Designer.cs">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FrontPage.cs">
       <SubType>Form</SubType>
@@ -115,11 +172,11 @@
     <Compile Include="View\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Nagad.cs">
+    <Compile Include="View\NotificationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Nagad.Designer.cs">
-      <DependentUpon>Nagad.cs</DependentUpon>
+    <Compile Include="View\NotificationForm.Designer.cs">
+      <DependentUpon>NotificationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\paymentForm.cs">
       <SubType>Form</SubType>
@@ -139,12 +196,6 @@
     <Compile Include="View\ResigstrationForm.Designer.cs">
       <DependentUpon>ResigstrationForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Upay.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Upay.Designer.cs">
-      <DependentUpon>Upay.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\UserListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,24 +212,39 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\AddCampaign.resx">
+      <DependentUpon>AddCampaign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddEvent.resx">
+      <DependentUpon>AddEvent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\adminDashboard.resx">
       <DependentUpon>adminDashboard.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\ApplicationListForm.resx">
+      <DependentUpon>ApplicationListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Beneficiary.resx">
       <DependentUpon>Beneficiary.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Bkash.resx">
-      <DependentUpon>Bkash.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\ContactUs.resx">
       <DependentUpon>ContactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DonationListForm.resx">
+      <DependentUpon>DonationListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DonationRecordForm.resx">
+      <DependentUpon>DonationRecordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\EditProfile.resx">
       <DependentUpon>EditProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Faq.resx">
       <DependentUpon>Faq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ForgotPass.resx">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrontPage.resx">
       <DependentUpon>FrontPage.cs</DependentUpon>
@@ -189,8 +255,8 @@
     <EmbeddedResource Include="View\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Nagad.resx">
-      <DependentUpon>Nagad.cs</DependentUpon>
+    <EmbeddedResource Include="View\NotificationForm.resx">
+      <DependentUpon>NotificationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\paymentForm.resx">
       <DependentUpon>paymentForm.cs</DependentUpon>
@@ -200,9 +266,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\ResigstrationForm.resx">
       <DependentUpon>ResigstrationForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Upay.resx">
-      <DependentUpon>Upay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UserListForm.resx">
       <DependentUpon>UserListForm.cs</DependentUpon>

@@ -19,6 +19,8 @@ namespace CharityManagementSystem.View
     {
         private Login login;
         bool isModified = false;
+        private bool isDateTimePickerModified = false;
+        private DateTime initialDate;
 
         public EditProfile(Login login)
         {
@@ -32,10 +34,8 @@ namespace CharityManagementSystem.View
             textBox1.Enabled = false;
 
             // Attach event handlers for TextChanged events
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             textBox2.TextChanged += TextBox_TextChanged;
             textBox3.TextChanged += TextBox_TextChanged;
-            textBox4.TextChanged += TextBox_TextChanged;
             textBox5.TextChanged += TextBox_TextChanged;
             textBox6.TextChanged += TextBox_TextChanged;
             textBox7.TextChanged += TextBox_TextChanged;
@@ -49,7 +49,8 @@ namespace CharityManagementSystem.View
 
         private void EditProfile_Load(object sender, EventArgs e)
         {
-
+            initialDate = dateTimePicker1.Value;
+            dateTimePicker1.ValueChanged += DateTimePicker1_ValueChanged;
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -124,12 +125,12 @@ namespace CharityManagementSystem.View
                         MessageBox.Show("Profile Updated Successfully!");
                     }
                 }
-                else if (textBox3.Modified || textBox4.Modified || textBox5.Modified || isModified)
+                else if (textBox3.Modified || isDateTimePickerModified || textBox5.Modified || isModified)
                 {
                     string profileId = textBox5.Text;
                     string address = textBox3.Text;
-                    string dob = textBox4.Text;
-                    string gender = listBox1.Text;
+                    string dob = dateTimePicker1.Text.ToString();
+                    string gender = comboBox1.Text;
 
                     if (string.IsNullOrWhiteSpace(profileId) || string.IsNullOrWhiteSpace(address) || string.IsNullOrWhiteSpace(dob) || string.IsNullOrWhiteSpace(gender))
                     {
@@ -165,7 +166,7 @@ namespace CharityManagementSystem.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while updating the profile: " + ex.Message);
+                MessageBox.Show("Profile Id Must be Unique: " + ex.Message);
             }
         }
 
@@ -207,6 +208,16 @@ namespace CharityManagementSystem.View
             // Matches dates in yyyy-MM-dd format, years 1900-2099, months 01-12, days 01-31
             string pattern = @"^(19|20)\d\d-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$";
             return Regex.IsMatch(date, pattern);
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            isDateTimePickerModified = (dateTimePicker1.Value != initialDate);
         }
     }
 }

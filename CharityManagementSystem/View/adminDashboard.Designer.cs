@@ -28,253 +28,130 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminDashboard));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.registerbtn = new System.Windows.Forms.Button();
-            this.notificationbtn = new System.Windows.Forms.Button();
-            this.paymentrecordsbtn = new System.Windows.Forms.Button();
-            this.viewlistbtn = new System.Windows.Forms.Button();
-            this.beneficiaryapplicationbtn = new System.Windows.Forms.Button();
-            this.volunteerregisbtn = new System.Windows.Forms.Button();
-            this.donorregistrationbtn = new System.Windows.Forms.Button();
-            this.volunteeringeventsbtn = new System.Windows.Forms.Button();
-            this.donationcampaignbtn = new System.Windows.Forms.Button();
-            this.dashboardbtn = new System.Windows.Forms.Button();
+            this.logOutbtn = new System.Windows.Forms.Button();
+            this.viewUserListbtn = new System.Windows.Forms.Button();
             this.Labeltitle = new System.Windows.Forms.Label();
-            this.Labelamount = new System.Windows.Forms.Label();
-            this.amount = new System.Windows.Forms.Label();
-            this.campaigns = new System.Windows.Forms.Label();
-            this.labeluser = new System.Windows.Forms.Label();
-            this.donationpanel = new System.Windows.Forms.Panel();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.statistics = new System.Windows.Forms.Label();
+            this.flowLayoutPanelDashboard = new System.Windows.Forms.FlowLayoutPanel();
+            this.userShow = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.donationpanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.Controls.Add(this.registerbtn);
-            this.panel1.Controls.Add(this.notificationbtn);
-            this.panel1.Controls.Add(this.paymentrecordsbtn);
-            this.panel1.Controls.Add(this.viewlistbtn);
-            this.panel1.Controls.Add(this.beneficiaryapplicationbtn);
-            this.panel1.Controls.Add(this.volunteerregisbtn);
-            this.panel1.Controls.Add(this.donorregistrationbtn);
-            this.panel1.Controls.Add(this.volunteeringeventsbtn);
-            this.panel1.Controls.Add(this.donationcampaignbtn);
-            this.panel1.Controls.Add(this.dashboardbtn);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.logOutbtn);
+            this.panel1.Controls.Add(this.viewUserListbtn);
             this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(202, 640);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // registerbtn
+            // logOutbtn
             // 
-            this.registerbtn.BackColor = System.Drawing.Color.Aqua;
-            this.registerbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerbtn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.registerbtn.Location = new System.Drawing.Point(12, 10);
-            this.registerbtn.Name = "registerbtn";
-            this.registerbtn.Size = new System.Drawing.Size(176, 42);
-            this.registerbtn.TabIndex = 1;
-            this.registerbtn.Text = "Logout";
-            this.registerbtn.UseVisualStyleBackColor = false;
-            this.registerbtn.Click += new System.EventHandler(this.registerbtn_Click);
+            this.logOutbtn.BackColor = System.Drawing.Color.Aqua;
+            this.logOutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutbtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.logOutbtn.Location = new System.Drawing.Point(12, 10);
+            this.logOutbtn.Name = "logOutbtn";
+            this.logOutbtn.Size = new System.Drawing.Size(176, 51);
+            this.logOutbtn.TabIndex = 1;
+            this.logOutbtn.Text = "Log Out";
+            this.logOutbtn.UseVisualStyleBackColor = false;
+            this.logOutbtn.Click += new System.EventHandler(this.registerbtn_Click);
             // 
-            // notificationbtn
+            // viewUserListbtn
             // 
-            this.notificationbtn.BackColor = System.Drawing.Color.PowderBlue;
-            this.notificationbtn.Location = new System.Drawing.Point(12, 513);
-            this.notificationbtn.Name = "notificationbtn";
-            this.notificationbtn.Size = new System.Drawing.Size(176, 52);
-            this.notificationbtn.TabIndex = 3;
-            this.notificationbtn.Text = "Send notifications to all users";
-            this.notificationbtn.UseVisualStyleBackColor = false;
-            // 
-            // paymentrecordsbtn
-            // 
-            this.paymentrecordsbtn.BackColor = System.Drawing.Color.Aqua;
-            this.paymentrecordsbtn.Location = new System.Drawing.Point(12, 449);
-            this.paymentrecordsbtn.Name = "paymentrecordsbtn";
-            this.paymentrecordsbtn.Size = new System.Drawing.Size(176, 58);
-            this.paymentrecordsbtn.TabIndex = 2;
-            this.paymentrecordsbtn.Text = "Mnitor all donations and payment records ";
-            this.paymentrecordsbtn.UseVisualStyleBackColor = false;
-            // 
-            // viewlistbtn
-            // 
-            this.viewlistbtn.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.viewlistbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewlistbtn.Location = new System.Drawing.Point(12, 382);
-            this.viewlistbtn.Name = "viewlistbtn";
-            this.viewlistbtn.Size = new System.Drawing.Size(176, 61);
-            this.viewlistbtn.TabIndex = 2;
-            this.viewlistbtn.Text = "View User List";
-            this.viewlistbtn.UseVisualStyleBackColor = false;
-            this.viewlistbtn.Click += new System.EventHandler(this.viewlistbtn_Click);
-            // 
-            // beneficiaryapplicationbtn
-            // 
-            this.beneficiaryapplicationbtn.BackColor = System.Drawing.Color.LightCyan;
-            this.beneficiaryapplicationbtn.Location = new System.Drawing.Point(12, 321);
-            this.beneficiaryapplicationbtn.Name = "beneficiaryapplicationbtn";
-            this.beneficiaryapplicationbtn.Size = new System.Drawing.Size(176, 55);
-            this.beneficiaryapplicationbtn.TabIndex = 2;
-            this.beneficiaryapplicationbtn.Text = "Add or reject beneficiary applications";
-            this.beneficiaryapplicationbtn.UseVisualStyleBackColor = false;
-            // 
-            // volunteerregisbtn
-            // 
-            this.volunteerregisbtn.BackColor = System.Drawing.Color.Turquoise;
-            this.volunteerregisbtn.Location = new System.Drawing.Point(12, 261);
-            this.volunteerregisbtn.Name = "volunteerregisbtn";
-            this.volunteerregisbtn.Size = new System.Drawing.Size(176, 54);
-            this.volunteerregisbtn.TabIndex = 2;
-            this.volunteerregisbtn.Text = "Approve or reject volunteer registrations";
-            this.volunteerregisbtn.UseVisualStyleBackColor = false;
-            // 
-            // donorregistrationbtn
-            // 
-            this.donorregistrationbtn.BackColor = System.Drawing.Color.PowderBlue;
-            this.donorregistrationbtn.Location = new System.Drawing.Point(12, 208);
-            this.donorregistrationbtn.Name = "donorregistrationbtn";
-            this.donorregistrationbtn.Size = new System.Drawing.Size(176, 47);
-            this.donorregistrationbtn.TabIndex = 2;
-            this.donorregistrationbtn.Text = "Approve or reject donor registration";
-            this.donorregistrationbtn.UseVisualStyleBackColor = false;
-            // 
-            // volunteeringeventsbtn
-            // 
-            this.volunteeringeventsbtn.BackColor = System.Drawing.Color.Cyan;
-            this.volunteeringeventsbtn.Location = new System.Drawing.Point(12, 156);
-            this.volunteeringeventsbtn.Name = "volunteeringeventsbtn";
-            this.volunteeringeventsbtn.Size = new System.Drawing.Size(176, 46);
-            this.volunteeringeventsbtn.TabIndex = 2;
-            this.volunteeringeventsbtn.Text = "Add, edit or delete volunteering events";
-            this.volunteeringeventsbtn.UseVisualStyleBackColor = false;
-            // 
-            // donationcampaignbtn
-            // 
-            this.donationcampaignbtn.BackColor = System.Drawing.Color.SkyBlue;
-            this.donationcampaignbtn.Location = new System.Drawing.Point(12, 101);
-            this.donationcampaignbtn.Name = "donationcampaignbtn";
-            this.donationcampaignbtn.Size = new System.Drawing.Size(176, 49);
-            this.donationcampaignbtn.TabIndex = 2;
-            this.donationcampaignbtn.Text = "Add , edit or delete donation campaigns";
-            this.donationcampaignbtn.UseVisualStyleBackColor = false;
-            // 
-            // dashboardbtn
-            // 
-            this.dashboardbtn.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.dashboardbtn.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dashboardbtn.Location = new System.Drawing.Point(12, 58);
-            this.dashboardbtn.Name = "dashboardbtn";
-            this.dashboardbtn.Size = new System.Drawing.Size(176, 37);
-            this.dashboardbtn.TabIndex = 2;
-            this.dashboardbtn.Text = "View Dashboard";
-            this.dashboardbtn.UseVisualStyleBackColor = false;
+            this.viewUserListbtn.BackColor = System.Drawing.Color.Aqua;
+            this.viewUserListbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewUserListbtn.Location = new System.Drawing.Point(12, 86);
+            this.viewUserListbtn.Name = "viewUserListbtn";
+            this.viewUserListbtn.Size = new System.Drawing.Size(176, 80);
+            this.viewUserListbtn.TabIndex = 2;
+            this.viewUserListbtn.Text = "User List";
+            this.viewUserListbtn.UseVisualStyleBackColor = false;
+            this.viewUserListbtn.Click += new System.EventHandler(this.viewlistbtn_Click);
             // 
             // Labeltitle
             // 
             this.Labeltitle.AutoSize = true;
-            this.Labeltitle.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.Labeltitle.BackColor = System.Drawing.Color.Transparent;
             this.Labeltitle.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Labeltitle.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.Labeltitle.ForeColor = System.Drawing.Color.Black;
             this.Labeltitle.Location = new System.Drawing.Point(218, 14);
             this.Labeltitle.Name = "Labeltitle";
             this.Labeltitle.Size = new System.Drawing.Size(334, 49);
             this.Labeltitle.TabIndex = 1;
             this.Labeltitle.Text = "Admin Dashboard";
             // 
-            // Labelamount
+            // flowLayoutPanelDashboard
             // 
-            this.Labelamount.AutoSize = true;
-            this.Labelamount.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Labelamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Labelamount.Location = new System.Drawing.Point(221, 85);
-            this.Labelamount.Name = "Labelamount";
-            this.Labelamount.Size = new System.Drawing.Size(214, 32);
-            this.Labelamount.TabIndex = 2;
-            this.Labelamount.Text = "Total Donation";
+            this.flowLayoutPanelDashboard.AutoScroll = true;
+            this.flowLayoutPanelDashboard.Location = new System.Drawing.Point(227, 69);
+            this.flowLayoutPanelDashboard.Name = "flowLayoutPanelDashboard";
+            this.flowLayoutPanelDashboard.Size = new System.Drawing.Size(742, 491);
+            this.flowLayoutPanelDashboard.TabIndex = 2;
             // 
-            // amount
+            // userShow
             // 
-            this.amount.AutoSize = true;
-            this.amount.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amount.Location = new System.Drawing.Point(262, 123);
-            this.amount.Name = "amount";
-            this.amount.Size = new System.Drawing.Size(104, 29);
-            this.amount.TabIndex = 3;
-            this.amount.Text = "$12,500";
+            this.userShow.AutoSize = true;
+            this.userShow.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userShow.Location = new System.Drawing.Point(837, 31);
+            this.userShow.Name = "userShow";
+            this.userShow.Size = new System.Drawing.Size(0, 26);
+            this.userShow.TabIndex = 3;
             // 
-            // campaigns
+            // button1
             // 
-            this.campaigns.AutoSize = true;
-            this.campaigns.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.campaigns.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campaigns.Location = new System.Drawing.Point(543, 85);
-            this.campaigns.Name = "campaigns";
-            this.campaigns.Size = new System.Drawing.Size(284, 32);
-            this.campaigns.TabIndex = 4;
-            this.campaigns.Text = "Active Campaigns 5";
+            this.button1.BackColor = System.Drawing.Color.Aqua;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(12, 172);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(176, 79);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Donation Record";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // labeluser
+            // button2
             // 
-            this.labeluser.AutoSize = true;
-            this.labeluser.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.labeluser.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeluser.Location = new System.Drawing.Point(601, 123);
-            this.labeluser.Name = "labeluser";
-            this.labeluser.Size = new System.Drawing.Size(163, 29);
-            this.labeluser.TabIndex = 5;
-            this.labeluser.Text = "New User 18";
+            this.button2.BackColor = System.Drawing.Color.Aqua;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(12, 259);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(176, 77);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Donation Given Record";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // donationpanel
+            // button3
             // 
-            this.donationpanel.BackColor = System.Drawing.Color.Lavender;
-            this.donationpanel.Controls.Add(this.pictureBox);
-            this.donationpanel.Controls.Add(this.statistics);
-            this.donationpanel.Location = new System.Drawing.Point(267, 229);
-            this.donationpanel.Name = "donationpanel";
-            this.donationpanel.Size = new System.Drawing.Size(609, 267);
-            this.donationpanel.TabIndex = 6;
-            // 
-            // pictureBox
-            // 
-            this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
-            this.pictureBox.Location = new System.Drawing.Point(3, 143);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(237, 121);
-            this.pictureBox.TabIndex = 1;
-            this.pictureBox.TabStop = false;
-            // 
-            // statistics
-            // 
-            this.statistics.AutoSize = true;
-            this.statistics.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statistics.Location = new System.Drawing.Point(224, 18);
-            this.statistics.Name = "statistics";
-            this.statistics.Size = new System.Drawing.Size(170, 20);
-            this.statistics.TabIndex = 0;
-            this.statistics.Text = "Donation Statistics";
-            this.statistics.Click += new System.EventHandler(this.statistics_Click);
+            this.button3.BackColor = System.Drawing.Color.Aqua;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(12, 342);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(176, 79);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Volunteer Applied";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // adminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumPurple;
+            this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(981, 572);
-            this.Controls.Add(this.donationpanel);
-            this.Controls.Add(this.labeluser);
-            this.Controls.Add(this.campaigns);
-            this.Controls.Add(this.amount);
-            this.Controls.Add(this.Labelamount);
+            this.Controls.Add(this.userShow);
+            this.Controls.Add(this.flowLayoutPanelDashboard);
             this.Controls.Add(this.Labeltitle);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
@@ -283,9 +160,6 @@
             this.Text = "adminDasboard";
             this.Load += new System.EventHandler(this.adminDasboard_Load);
             this.panel1.ResumeLayout(false);
-            this.donationpanel.ResumeLayout(false);
-            this.donationpanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,23 +168,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button registerbtn;
-        private System.Windows.Forms.Button dashboardbtn;
-        private System.Windows.Forms.Button donationcampaignbtn;
-        private System.Windows.Forms.Button volunteeringeventsbtn;
-        private System.Windows.Forms.Button donorregistrationbtn;
-        private System.Windows.Forms.Button viewlistbtn;
-        private System.Windows.Forms.Button beneficiaryapplicationbtn;
-        private System.Windows.Forms.Button volunteerregisbtn;
-        private System.Windows.Forms.Button paymentrecordsbtn;
-        private System.Windows.Forms.Button notificationbtn;
+        private System.Windows.Forms.Button logOutbtn;
+        private System.Windows.Forms.Button viewUserListbtn;
         private System.Windows.Forms.Label Labeltitle;
-        private System.Windows.Forms.Label Labelamount;
-        private System.Windows.Forms.Label amount;
-        private System.Windows.Forms.Label campaigns;
-        private System.Windows.Forms.Label labeluser;
-        private System.Windows.Forms.Panel donationpanel;
-        private System.Windows.Forms.Label statistics;
-        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelDashboard;
+        private System.Windows.Forms.Label userShow;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

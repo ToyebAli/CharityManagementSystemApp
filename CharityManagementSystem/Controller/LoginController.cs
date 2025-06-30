@@ -41,5 +41,12 @@ namespace CharityManagementSystem.Controller
             Logins lgs = new Logins();
             lgs.DeleteLogin(userId);
         }
+
+        public Login SearchLoginByUserId(string userId)
+        {
+            Logins lgs = new Logins();
+            Login login = lgs.SearchLoginByUserId(userId);
+            return login;
+        }
     }
 }

@@ -47,6 +47,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.passwordBox = new System.Windows.Forms.TextBox();
+            this.filterBylbl = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,47 +114,52 @@
             // 
             // userIdBox
             // 
-            this.userIdBox.Location = new System.Drawing.Point(159, 86);
+            this.userIdBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userIdBox.Location = new System.Drawing.Point(159, 76);
             this.userIdBox.Name = "userIdBox";
-            this.userIdBox.Size = new System.Drawing.Size(164, 22);
+            this.userIdBox.Size = new System.Drawing.Size(164, 30);
             this.userIdBox.TabIndex = 6;
             // 
             // nameBox
             // 
+            this.nameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameBox.Location = new System.Drawing.Point(159, 131);
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(164, 22);
+            this.nameBox.Size = new System.Drawing.Size(164, 30);
             this.nameBox.TabIndex = 7;
             // 
             // emailBox
             // 
+            this.emailBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailBox.Location = new System.Drawing.Point(159, 179);
             this.emailBox.Name = "emailBox";
-            this.emailBox.Size = new System.Drawing.Size(164, 22);
+            this.emailBox.Size = new System.Drawing.Size(268, 30);
             this.emailBox.TabIndex = 8;
             // 
             // phoneBox
             // 
+            this.phoneBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phoneBox.Location = new System.Drawing.Point(601, 84);
             this.phoneBox.Name = "phoneBox";
-            this.phoneBox.Size = new System.Drawing.Size(174, 22);
+            this.phoneBox.Size = new System.Drawing.Size(174, 30);
             this.phoneBox.TabIndex = 9;
             // 
             // roleBox
             // 
+            this.roleBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roleBox.Location = new System.Drawing.Point(601, 129);
             this.roleBox.Name = "roleBox";
-            this.roleBox.Size = new System.Drawing.Size(174, 22);
+            this.roleBox.Size = new System.Drawing.Size(174, 30);
             this.roleBox.TabIndex = 10;
             // 
             // add
             // 
             this.add.BackColor = System.Drawing.Color.LimeGreen;
-            this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.add.Location = new System.Drawing.Point(37, 308);
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(75, 38);
+            this.add.Size = new System.Drawing.Size(110, 38);
             this.add.TabIndex = 12;
             this.add.Text = "Add";
             this.add.UseVisualStyleBackColor = false;
@@ -161,11 +168,11 @@
             // delete
             // 
             this.delete.BackColor = System.Drawing.Color.Red;
-            this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.delete.Location = new System.Drawing.Point(660, 308);
+            this.delete.Location = new System.Drawing.Point(856, 308);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(89, 38);
+            this.delete.Size = new System.Drawing.Size(104, 38);
             this.delete.TabIndex = 13;
             this.delete.Text = "Delete";
             this.delete.UseVisualStyleBackColor = false;
@@ -174,24 +181,24 @@
             // edit
             // 
             this.edit.BackColor = System.Drawing.Color.LimeGreen;
-            this.edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.edit.Location = new System.Drawing.Point(239, 308);
+            this.edit.Location = new System.Drawing.Point(297, 308);
             this.edit.Name = "edit";
-            this.edit.Size = new System.Drawing.Size(75, 38);
+            this.edit.Size = new System.Drawing.Size(130, 38);
             this.edit.TabIndex = 16;
-            this.edit.Text = "Edit";
+            this.edit.Text = "Update";
             this.edit.UseVisualStyleBackColor = false;
             this.edit.Click += new System.EventHandler(this.edit_Click);
             // 
             // refresh
             // 
             this.refresh.BackColor = System.Drawing.Color.LimeGreen;
-            this.refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.refresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.refresh.Location = new System.Drawing.Point(458, 308);
+            this.refresh.Location = new System.Drawing.Point(584, 308);
             this.refresh.Name = "refresh";
-            this.refresh.Size = new System.Drawing.Size(93, 38);
+            this.refresh.Size = new System.Drawing.Size(119, 38);
             this.refresh.TabIndex = 17;
             this.refresh.Text = "Refresh";
             this.refresh.UseVisualStyleBackColor = false;
@@ -201,22 +208,22 @@
             // 
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(32, 361);
+            this.dataGridView.Location = new System.Drawing.Point(12, 361);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.Size = new System.Drawing.Size(743, 176);
+            this.dataGridView.Size = new System.Drawing.Size(958, 211);
             this.dataGridView.TabIndex = 18;
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Indigo;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(24, 22);
+            this.button1.Location = new System.Drawing.Point(32, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 35);
+            this.button1.Size = new System.Drawing.Size(115, 42);
             this.button1.TabIndex = 19;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = false;
@@ -236,10 +243,39 @@
             // 
             // passwordBox
             // 
+            this.passwordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordBox.Location = new System.Drawing.Point(601, 179);
             this.passwordBox.Name = "passwordBox";
-            this.passwordBox.Size = new System.Drawing.Size(174, 22);
+            this.passwordBox.Size = new System.Drawing.Size(174, 30);
             this.passwordBox.TabIndex = 21;
+            // 
+            // filterBylbl
+            // 
+            this.filterBylbl.AutoSize = true;
+            this.filterBylbl.BackColor = System.Drawing.Color.Transparent;
+            this.filterBylbl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filterBylbl.ForeColor = System.Drawing.Color.Black;
+            this.filterBylbl.Location = new System.Drawing.Point(32, 235);
+            this.filterBylbl.Name = "filterBylbl";
+            this.filterBylbl.Size = new System.Drawing.Size(91, 23);
+            this.filterBylbl.TabIndex = 22;
+            this.filterBylbl.Text = "Filter By:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "All",
+            "Admin",
+            "Donor",
+            "Beneficiary",
+            "Volunteer"});
+            this.comboBox1.Location = new System.Drawing.Point(159, 233);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(164, 33);
+            this.comboBox1.TabIndex = 23;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // UserListForm
             // 
@@ -247,7 +283,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Purple;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 549);
+            this.ClientSize = new System.Drawing.Size(982, 573);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.filterBylbl);
             this.Controls.Add(this.passwordBox);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.button1);
@@ -297,5 +335,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.TextBox passwordBox;
+        private System.Windows.Forms.Label filterBylbl;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

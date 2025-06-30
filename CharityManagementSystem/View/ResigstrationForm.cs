@@ -41,12 +41,18 @@ namespace CharityManagementSystem.View
         {
             try
             {
-                string userId = Guid.NewGuid().ToString(); // Generate a unique user ID
+                string userId = GenerateDonorUserId(); // Generate a unique user ID
                 string name = txtName.Text;
                 string email = txtEmail.Text;
                 string phoneNumber = txtPhone.Text;
                 string password = txtPassword.Text;
                 string confirmPassword = txtConfirmPassword.Text;
+
+                nameIsValidLabel.Text = string.Empty;
+                emailIsValidLabel.Text = string.Empty;
+                phoneIsValidLabel.Text = string.Empty;
+                passwordIsValidLabel.Text = string.Empty;
+                confirmPassIsValidLabel.Text = string.Empty;
 
                 if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(phoneNumber) || string.IsNullOrWhiteSpace(password))
                 {
@@ -86,12 +92,7 @@ namespace CharityManagementSystem.View
 
                 else
                 {
-                    nameIsValidLabel.Text = string.Empty;
-                    emailIsValidLabel.Text = string.Empty;
-                    phoneIsValidLabel.Text = string.Empty;
-                    passwordIsValidLabel.Text = string.Empty;
-                    confirmPassIsValidLabel.Text = string.Empty;
-
+                 
                     LoginController loginController = new LoginController();
                     Login newLogin = new Login
                     {
@@ -105,7 +106,7 @@ namespace CharityManagementSystem.View
                     bool isRegistered = loginController.AddLogin(newLogin);
                     if (isRegistered)
                     {
-                        MessageBox.Show("Registration successful! You can now log in.");
+                        MessageBox.Show("Registration successful! You can now log in. Your Username: "+userId);
                         this.Hide();
                         LoginForm loginForm = new LoginForm();
                         loginForm.ShowDialog();
@@ -174,6 +175,13 @@ namespace CharityManagementSystem.View
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+        // Generates a unique user ID starting with "DON" followed by 4 random digits
+        private string GenerateDonorUserId()
+        {
+            Random random = new Random();
+            int number = random.Next(0, 10000); // Generates a number from 0 to 9999
+            return $"DON{number:D4}"; // Pads with leading zeros if necessary
         }
     }
 }

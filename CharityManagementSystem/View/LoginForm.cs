@@ -58,7 +58,7 @@ namespace CharityManagementSystem.View
                 {
                     MessageBox.Show("Welcome " + login.Name);
                     this.Hide();
-                    adminDashboard ad = new adminDashboard();
+                    adminDashboard ad = new adminDashboard(login);
                     ad.Show();
                 }
 
@@ -68,7 +68,7 @@ namespace CharityManagementSystem.View
                     this.Hide();
                     ProfileForm pf = new ProfileForm(login);
                     pf.ShowDialog();
-                    pf.FormClosed += (s, args) => Application.Exit();
+                    pf.FormClosed += (s, args) => System.Windows.Forms.Application.Exit();
                 }
 
                 else
@@ -83,12 +83,19 @@ namespace CharityManagementSystem.View
             this.Hide();
             ResigstrationForm resigstrationForm = new ResigstrationForm();
             resigstrationForm.Show();
-            resigstrationForm.FormClosed += (s, args) => Application.Exit();
+            resigstrationForm.FormClosed += (s, args) => System.Windows.Forms.Application.Exit();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            ForgotPass forgotPass = new ForgotPass();
+            forgotPass.ShowDialog();
         }
     }
 }

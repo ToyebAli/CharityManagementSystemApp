@@ -57,9 +57,9 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(79, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 22);
+            this.label2.Size = new System.Drawing.Size(62, 22);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Name";
+            this.label2.Text = "Name:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
@@ -69,9 +69,9 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(78, 173);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 22);
+            this.label3.Size = new System.Drawing.Size(63, 22);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Email";
+            this.label3.Text = "Email:";
             // 
             // label4
             // 
@@ -80,9 +80,9 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(77, 282);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 22);
+            this.label4.Size = new System.Drawing.Size(94, 22);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Password";
+            this.label4.Text = "Password:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
@@ -92,9 +92,9 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(78, 227);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 22);
+            this.label5.Size = new System.Drawing.Size(64, 22);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Phone";
+            this.label5.Text = "Phone:";
             // 
             // txtName
             // 
@@ -119,6 +119,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(263, 276);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(326, 30);
             this.txtPassword.TabIndex = 10;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
@@ -162,15 +163,16 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(77, 334);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(158, 22);
+            this.label6.Size = new System.Drawing.Size(164, 22);
             this.label6.TabIndex = 17;
-            this.label6.Text = "Confirm Password";
+            this.label6.Text = "Confirm Password:";
             // 
             // txtConfirmPassword
             // 
             this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmPassword.Location = new System.Drawing.Point(263, 326);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.PasswordChar = '*';
             this.txtConfirmPassword.Size = new System.Drawing.Size(326, 30);
             this.txtConfirmPassword.TabIndex = 11;
             // 
@@ -201,8 +203,9 @@
             // nameIsValidLabel
             // 
             this.nameIsValidLabel.AutoSize = true;
+            this.nameIsValidLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameIsValidLabel.ForeColor = System.Drawing.Color.Red;
-            this.nameIsValidLabel.Location = new System.Drawing.Point(260, 118);
+            this.nameIsValidLabel.Location = new System.Drawing.Point(606, 128);
             this.nameIsValidLabel.Name = "nameIsValidLabel";
             this.nameIsValidLabel.Size = new System.Drawing.Size(0, 16);
             this.nameIsValidLabel.TabIndex = 20;
@@ -210,8 +213,9 @@
             // emailIsValidLabel
             // 
             this.emailIsValidLabel.AutoSize = true;
+            this.emailIsValidLabel.BackColor = System.Drawing.Color.Transparent;
             this.emailIsValidLabel.ForeColor = System.Drawing.Color.Red;
-            this.emailIsValidLabel.Location = new System.Drawing.Point(260, 179);
+            this.emailIsValidLabel.Location = new System.Drawing.Point(606, 179);
             this.emailIsValidLabel.Name = "emailIsValidLabel";
             this.emailIsValidLabel.Size = new System.Drawing.Size(0, 16);
             this.emailIsValidLabel.TabIndex = 21;
@@ -219,8 +223,9 @@
             // phoneIsValidLabel
             // 
             this.phoneIsValidLabel.AutoSize = true;
+            this.phoneIsValidLabel.BackColor = System.Drawing.Color.Transparent;
             this.phoneIsValidLabel.ForeColor = System.Drawing.Color.Red;
-            this.phoneIsValidLabel.Location = new System.Drawing.Point(263, 243);
+            this.phoneIsValidLabel.Location = new System.Drawing.Point(606, 235);
             this.phoneIsValidLabel.Name = "phoneIsValidLabel";
             this.phoneIsValidLabel.Size = new System.Drawing.Size(0, 16);
             this.phoneIsValidLabel.TabIndex = 22;
@@ -228,8 +233,9 @@
             // passwordIsValidLabel
             // 
             this.passwordIsValidLabel.AutoSize = true;
+            this.passwordIsValidLabel.BackColor = System.Drawing.Color.Transparent;
             this.passwordIsValidLabel.ForeColor = System.Drawing.Color.Red;
-            this.passwordIsValidLabel.Location = new System.Drawing.Point(263, 316);
+            this.passwordIsValidLabel.Location = new System.Drawing.Point(260, 309);
             this.passwordIsValidLabel.Name = "passwordIsValidLabel";
             this.passwordIsValidLabel.Size = new System.Drawing.Size(0, 16);
             this.passwordIsValidLabel.TabIndex = 23;
@@ -237,8 +243,9 @@
             // confirmPassIsValidLabel
             // 
             this.confirmPassIsValidLabel.AutoSize = true;
+            this.confirmPassIsValidLabel.BackColor = System.Drawing.Color.Transparent;
             this.confirmPassIsValidLabel.ForeColor = System.Drawing.Color.Red;
-            this.confirmPassIsValidLabel.Location = new System.Drawing.Point(263, 380);
+            this.confirmPassIsValidLabel.Location = new System.Drawing.Point(606, 340);
             this.confirmPassIsValidLabel.Name = "confirmPassIsValidLabel";
             this.confirmPassIsValidLabel.Size = new System.Drawing.Size(0, 16);
             this.confirmPassIsValidLabel.TabIndex = 24;

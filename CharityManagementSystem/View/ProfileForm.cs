@@ -18,7 +18,7 @@ namespace CharityManagementSystem.View
         {
             InitializeComponent();
             this.login = login;
-            lblWelcome.Text = $"Welcome, {login.Name}!";
+            lblWelcome.Text = $"User {login.Name}";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -73,6 +73,13 @@ namespace CharityManagementSystem.View
             this.Hide();
             Menu mn = new Menu(login);
             mn.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NotificationForm ntf = new NotificationForm(login);
+            ntf.ShowDialog();
         }
     }
 }

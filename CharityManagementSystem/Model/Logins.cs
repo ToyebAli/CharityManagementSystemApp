@@ -22,7 +22,7 @@ namespace CharityManagementSystem.Model
             cmd.Parameters.AddWithValue("@userId", login.UserId);
             cmd.Parameters.AddWithValue("@name", login.Name);
             cmd.Parameters.AddWithValue("@email", login.Email);
-            cmd.Parameters.AddWithValue("@Password", login.Password);
+            cmd.Parameters.AddWithValue("@password", login.Password);
             cmd.Parameters.AddWithValue("@phoneNumber", login.PhoneNumber);
             cmd.Parameters.AddWithValue("@role", login.Role);
             cmd.CommandType = CommandType.Text;
@@ -80,12 +80,13 @@ namespace CharityManagementSystem.Model
 
         public void UpdateLogin(Login login)
         {
-            SqlCommand cmd = sda.GetQuery("UPDATE [User] SET  name=@name, email=@email, password=@password, phoneNumber = @phoneNumber WHERE userId=@userId;");
+            SqlCommand cmd = sda.GetQuery("UPDATE [User] SET  name=@name, email=@email, password=@password, phoneNumber = @phoneNumber, role = @role WHERE userId=@userId;");
             cmd.Parameters.AddWithValue("@userId", login.UserId);
             cmd.Parameters.AddWithValue("@name", login.Name);
             cmd.Parameters.AddWithValue("@email", login.Email);
             cmd.Parameters.AddWithValue("@password", login.Password);
             cmd.Parameters.AddWithValue("@phoneNumber", login.PhoneNumber);
+            cmd.Parameters.AddWithValue("@role", login.Role);
             cmd.CommandType = CommandType.Text;
             cmd.Connection.Open();
             cmd.ExecuteNonQuery();
@@ -108,6 +109,23 @@ namespace CharityManagementSystem.Model
             cmd.Connection.Open();
             cmd.ExecuteNonQuery();
             cmd.Connection.Close();
+        }
+
+        public Login SearchLoginByUserId(string userId)
+        {
+            SqlCommand cmd = sda.GetQuery("SELECT * FROM [User] WHERE userId=@userId");
+            cmd.Parameters.AddWithValue("@userId", userId);
+            cmd.CommandType = CommandType.Text;
+            List<Login> logins = GetData(cmd);
+
+            if (logins.Count > 0)
+            {
+                return logins[0];
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

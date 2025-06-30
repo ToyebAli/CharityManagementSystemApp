@@ -16,9 +16,11 @@ namespace CharityManagementSystem.View
 {
     public partial class UserListForm: Form
     {
-        public UserListForm()
+        private Login login;
+        public UserListForm(Login login)
         {
             InitializeComponent();
+            this.login = login;
         }
 
         private void UserListForm_Load(object sender, EventArgs e)
@@ -48,7 +50,7 @@ namespace CharityManagementSystem.View
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            adminDashboard ad = new adminDashboard();
+            adminDashboard ad = new adminDashboard(login);
             ad.Show();
         }
 
@@ -233,6 +235,42 @@ namespace CharityManagementSystem.View
             // Validates Bangladeshi phone numbers: starts with 01, followed by 9 digits (total 11 digits)
             string pattern = @"^01[0-9]{9}$";
             return Regex.IsMatch(phone, pattern);
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoginController lgc = new LoginController();
+            int selectedRole = 0;
+
+            // Map comboBox1 selection to role
+            // Adjust the items in comboBox1 to match these names or use indices as needed
+            if (comboBox1.SelectedIndex == -1 || comboBox1.SelectedItem == null || comboBox1.SelectedItem.ToString() == "All")
+            {
+                // Show all users
+                dataGridView.DataSource = lgc.GetAllLogin();
+                return;
+            }
+            else if (comboBox1.SelectedItem.ToString() == "Admin")
+            {
+                selectedRole = 1;
+            }
+            else if (comboBox1.SelectedItem.ToString() == "Donor")
+            {
+                selectedRole = 2;
+            }
+            else if (comboBox1.SelectedItem.ToString() == "Beneficiary")
+            {
+                selectedRole = 3;
+            }
+            else if (comboBox1.SelectedItem.ToString() == "Volunteer")
+            {
+                selectedRole = 4;
+            }
+
+            // Filter users by role
+            var allUsers = lgc.GetAllLogin();
+            var filteredUsers = allUsers.Where(u => u.Role == selectedRole).ToList();
+            dataGridView.DataSource = filteredUsers;
         }
     }
 }
