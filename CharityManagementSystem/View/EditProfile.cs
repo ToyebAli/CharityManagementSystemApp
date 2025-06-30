@@ -118,7 +118,7 @@ namespace CharityManagementSystem.View
 
                     else
                     {
-                        Login login = new Login(userId, name, email, password, phoneNumber, 1);
+                        Login login = new Login(userId, name, email, password, phoneNumber, 2);
 
                         LoginController lgc = new LoginController();
                         lgc.UpdateLogin(login);
@@ -144,11 +144,11 @@ namespace CharityManagementSystem.View
                         return;
                     }
 
-                    else if (!IsValidDate(dob))
-                    {
-                        MessageBox.Show("Please enter in Date format (yyyy-MM-dd).");
-                        return;
-                    }
+                    //else if (!IsValidDate(dob))
+                    //{
+                    //    MessageBox.Show("Please enter in Date format (yyyy-MM-dd).");
+                    //    return;
+                    //}
 
                     else
                     {
